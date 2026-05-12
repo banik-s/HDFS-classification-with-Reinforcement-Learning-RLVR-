@@ -1,0 +1,990 @@
+block_id,block_content,baseline_reasoning,baseline_prediction,ft_reasoning,ft_prediction,ground_truth
+blk_4207633092047094297,"INFO dfs.DataNode$DataXceiver: Receiving block blk_4207633092047094297 src: /10.251.30.101:54853 dest: /10.251.30.101:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_4207633092047094297 src: /10.250.5.237:38080 dest: /10.250.5.237:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_4207633092047094297 src: /10.250.5.237:59652 dest: /10.250.5.237:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/sortrand2/_temporary/_task_200811101024_0003_r_000140_0/part-00140. blk_4207633092047094297
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_4207633092047094297 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_4207633092047094297 of size 67108864 from /10.251.30.101
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_4207633092047094297 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_4207633092047094297 of size 67108864 from /10.250.5.237
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_4207633092047094297 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_4207633092047094297 of size 67108864 from /10.250.5.237
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.30.85:50010 is added to blk_4207633092047094297 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.5.237:50010 is added to blk_4207633092047094297 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.30.101:50010 is added to blk_4207633092047094297 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_4207633092047094297 is added to invalidSet of 10.250.5.237:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_4207633092047094297 is added to invalidSet of 10.251.30.101:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_4207633092047094297 is added to invalidSet of 10.251.30.85:50010
+INFO dfs.FSDataset: Deleting block blk_4207633092047094297 file /mnt/hadoop/dfs/data/current/subdir45/blk_4207633092047094297
+INFO dfs.FSDataset: Deleting block blk_4207633092047094297 file /mnt/hadoop/dfs/data/current/subdir51/blk_4207633092047094297
+INFO dfs.FSDataset: Deleting block blk_4207633092047094297 file /mnt/hadoop/dfs/data/current/subdir32/blk_4207633092047094297","All entries are INFO-level and show normal block lifecycle: allocation, replication via the pipeline (hence multiple Receiving entries for each hop), addition to the NameNode, then a deletion of a temporary block once the job’s temporary files are cleaned up. No errors or unusual patterns appear.",False,"The log shows a normal block lifecycle for a temporary MapReduce output: block allocation, data reception on DataNodes, successful PacketResponder terminations, blockMap updates, and eventual cleanup of temporary files. No errors or unusual patterns are present.",False,False
+blk_1959715196700103783,"INFO dfs.DataNode$DataXceiver: Receiving block blk_1959715196700103783 src: /10.251.215.16:36281 dest: /10.251.215.16:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_1959715196700103783 src: /10.251.215.16:54380 dest: /10.251.215.16:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_1959715196700103783 src: /10.251.73.220:43791 dest: /10.251.73.220:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt5/_temporary/_task_200811101024_0012_m_000175_0/part-00175. blk_1959715196700103783
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_1959715196700103783 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_1959715196700103783 of size 67108864 from /10.251.215.16
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_1959715196700103783 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_1959715196700103783 of size 67108864 from /10.251.215.16
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_1959715196700103783 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_1959715196700103783 of size 67108864 from /10.251.73.220
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.215.16:50010 is added to blk_1959715196700103783 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.73.220:50010 is added to blk_1959715196700103783 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.111.228:50010 is added to blk_1959715196700103783 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_1959715196700103783 is added to invalidSet of 10.251.111.228:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_1959715196700103783 is added to invalidSet of 10.251.215.16:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_1959715196700103783 is added to invalidSet of 10.251.73.220:50010
+INFO dfs.FSDataset: Deleting block blk_1959715196700103783 file /mnt/hadoop/dfs/data/current/subdir53/blk_1959715196700103783
+INFO dfs.FSDataset: Deleting block blk_1959715196700103783 file /mnt/hadoop/dfs/data/current/subdir40/blk_1959715196700103783
+INFO dfs.FSDataset: Deleting block blk_1959715196700103783 file /mnt/hadoop/dfs/data/current/subdir59/blk_1959715196700103783","These logs show a temporary map-reduce block being allocated, replicated to three DataNodes, then promptly invalidated and deleted. This is normal HDFS cleanup of temporary files (notice the _temporary path and invalidSet entries) rather than an error or data corruption scenario.",False,"The logs show a normal lifecycle for block blk_1959715196700103783: allocation, replication to DataNodes, PacketResponder termination events, blockMap updates, and eventual invalidation and deletion. No errors or unusual patterns are present.",False,False
+blk_-488616411284980627,"INFO dfs.DataNode$DataXceiver: Receiving block blk_-488616411284980627 src: /10.251.127.47:34414 dest: /10.251.127.47:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-488616411284980627 src: /10.251.73.220:56934 dest: /10.251.73.220:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-488616411284980627 src: /10.251.127.47:60816 dest: /10.251.127.47:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt4/_temporary/_task_200811101024_0010_m_000503_0/part-00503. blk_-488616411284980627
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-488616411284980627 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-488616411284980627 of size 67108864 from /10.251.127.47
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-488616411284980627 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-488616411284980627 of size 67108864 from /10.251.73.220
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-488616411284980627 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-488616411284980627 of size 67108864 from /10.251.127.47
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.199.150:50010 is added to blk_-488616411284980627 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.73.220:50010 is added to blk_-488616411284980627 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.127.47:50010 is added to blk_-488616411284980627 size 67108864","All messages are standard HDFS DataNode receive/packet responder and Namenode block‐map updates for a normal three-replica write cycle. There are no warnings or errors, and the block ends up stored on three distinct DataNodes as expected (10.251.127.47, 10.251.73.220, 10.251.199.150). Hence this log block is normal.",False,"The log shows standard block allocation, replication and acknowledgement flow with default 64 MB block size across three DataNodes. There are no errors, warnings or checksum failures, so this is normal.",False,False
+blk_5068874190755339037,"INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_200811101024_0001_m_001642_0/part-01642. blk_5068874190755339037
+INFO dfs.DataNode$DataXceiver: Receiving block blk_5068874190755339037 src: /10.251.107.98:53576 dest: /10.251.107.98:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_5068874190755339037 src: /10.251.107.98:42042 dest: /10.251.107.98:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_5068874190755339037 src: /10.251.107.50:59600 dest: /10.251.107.50:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.107.98:50010 is added to blk_5068874190755339037 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.125.237:50010 is added to blk_5068874190755339037 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.107.50:50010 is added to blk_5068874190755339037 size 67108864
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_5068874190755339037 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_5068874190755339037 of size 67108864 from /10.251.107.98
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_5068874190755339037 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_5068874190755339037 of size 67108864 from /10.251.107.98
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_5068874190755339037 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_5068874190755339037 of size 67108864 from /10.251.107.50
+WARN dfs.DataNode$DataXceiver: 10.251.107.50:50010:Got exception while serving blk_5068874190755339037 to /10.251.126.83:
+WARN dfs.DataNode$DataXceiver: 10.251.107.98:50010:Got exception while serving blk_5068874190755339037 to /10.250.19.16:
+INFO dfs.DataNode$DataXceiver: 10.251.107.50:50010 Served block blk_5068874190755339037 to /10.251.126.83
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_5068874190755339037 is added to invalidSet of 10.251.107.50:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_5068874190755339037 is added to invalidSet of 10.251.107.98:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_5068874190755339037 is added to invalidSet of 10.251.125.237:50010
+INFO dfs.FSDataset: Deleting block blk_5068874190755339037 file /mnt/hadoop/dfs/data/current/subdir57/blk_5068874190755339037
+INFO dfs.FSDataset: Deleting block blk_5068874190755339037 file /mnt/hadoop/dfs/data/current/subdir40/blk_5068874190755339037
+INFO dfs.FSDataset: Deleting block blk_5068874190755339037 file /mnt/hadoop/dfs/data/current/subdir36/blk_5068874190755339037","This trace shows a block created under a _temporary job directory, replicated to three DataNodes, and then immediately invalidated and deleted when the temporary file was cleaned up. The two WARNs are transient serving exceptions but do not indicate persistent failures or corruption. This behavior is expected for MapReduce temporary files and is normal.",False,"The log shows a normal lifecycle for a temporary map output block: allocation, writing to DataNodes, replication, client reads (with transient warnings and automatic retries), and then invalidation and deletion once the job finishes. The WARN lines reflect momentary serving exceptions that were successfully retried, which is expected in a distributed environment and not indicative of a lasting fault.",False,False
+blk_-4220704082327103802,"INFO dfs.DataNode$DataXceiver: Receiving block blk_-4220704082327103802 src: /10.251.38.214:41484 dest: /10.251.38.214:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-4220704082327103802 src: /10.251.111.228:52829 dest: /10.251.111.228:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-4220704082327103802 src: /10.251.111.228:37844 dest: /10.251.111.228:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_200811092030_0001_m_001235_0/part-01235. blk_-4220704082327103802
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-4220704082327103802 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-4220704082327103802 of size 67108864 from /10.251.38.214
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-4220704082327103802 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-4220704082327103802 of size 67108864 from /10.251.111.228
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-4220704082327103802 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-4220704082327103802 of size 67108864 from /10.251.111.228
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.38.214:50010 is added to blk_-4220704082327103802 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.111.228:50010 is added to blk_-4220704082327103802 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.203.80:50010 is added to blk_-4220704082327103802 size 67108864
+WARN dfs.DataNode$DataXceiver: 10.251.203.80:50010:Got exception while serving blk_-4220704082327103802 to /10.250.10.6:
+INFO dfs.DataNode$DataXceiver: 10.251.203.80:50010 Served block blk_-4220704082327103802 to /10.250.10.6
+WARN dfs.DataNode$DataXceiver: 10.251.38.214:50010:Got exception while serving blk_-4220704082327103802 to /10.251.199.150:
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-4220704082327103802 is added to invalidSet of 10.251.111.228:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-4220704082327103802 is added to invalidSet of 10.251.203.80:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-4220704082327103802 is added to invalidSet of 10.251.38.214:50010
+INFO dfs.FSDataset: Deleting block blk_-4220704082327103802 file /mnt/hadoop/dfs/data/current/subdir42/blk_-4220704082327103802
+INFO dfs.FSDataset: Deleting block blk_-4220704082327103802 file /mnt/hadoop/dfs/data/current/subdir42/blk_-4220704082327103802
+INFO dfs.FSDataset: Deleting block blk_-4220704082327103802 file /mnt/hadoop/dfs/data/current/subdir20/blk_-4220704082327103802","Shortly after receiving and registering the block on three DataNodes, the logs show warnings of transport exceptions while serving that same block, followed by NameNode marking it as invalid on all hosts and deleting it from disk. Those exception messages plus the block being added to the invalidSet and then wiped out indicate corruption or transfer failures, which is anomalous.",True,"This log shows normal HDFS behavior for a temporary MapReduce shuffle block: it was allocated, replicated, read (with a couple of transient WARN network exceptions), and then deleted when the job finished. No persistent errors occurred.",False,False
+blk_3072783218814735974,"INFO dfs.DataNode$DataXceiver: Receiving block blk_3072783218814735974 src: /10.251.214.112:60570 dest: /10.251.214.112:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_3072783218814735974 src: /10.251.110.160:42130 dest: /10.251.110.160:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_3072783218814735974 src: /10.251.110.160:55189 dest: /10.251.110.160:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand4/_temporary/_task_200811101024_0009_m_001835_0/part-01835. blk_3072783218814735974
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_3072783218814735974 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_3072783218814735974 of size 67108864 from /10.251.214.112
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.30.134:50010 is added to blk_3072783218814735974 size 67108864
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_3072783218814735974 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_3072783218814735974 of size 67108864 from /10.251.110.160
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_3072783218814735974 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_3072783218814735974 of size 67108864 from /10.251.110.160
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.110.160:50010 is added to blk_3072783218814735974 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.214.112:50010 is added to blk_3072783218814735974 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_3072783218814735974 is added to invalidSet of 10.251.110.160:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_3072783218814735974 is added to invalidSet of 10.251.214.112:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_3072783218814735974 is added to invalidSet of 10.251.30.134:50010
+INFO dfs.FSDataset: Deleting block blk_3072783218814735974 file /mnt/hadoop/dfs/data/current/subdir59/blk_3072783218814735974
+INFO dfs.FSDataset: Deleting block blk_3072783218814735974 file /mnt/hadoop/dfs/data/current/subdir12/blk_3072783218814735974
+INFO dfs.FSDataset: Deleting block blk_3072783218814735974 file /mnt/hadoop/dfs/data/current/subdir46/blk_3072783218814735974","This log shows the normal lifecycle of an HDFS block: allocation, replication to three DataNodes, then invalidation and deletion of a temporary block (under the _temporary path) once it is no longer needed. No errors or suspicious patterns are present.",False,"All log entries are INFO-level and show normal block allocation, replication, addition to DataNode listings, and eventual cleanup of a temporary task’s block. There are no error or warning messages indicating failed I/O, network issues, or data corruption.",False,False
+blk_-8155924434005007303,"INFO dfs.DataNode$DataXceiver: Receiving block blk_-8155924434005007303 src: /10.251.199.245:48497 dest: /10.251.199.245:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-8155924434005007303 src: /10.251.74.134:51393 dest: /10.251.74.134:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-8155924434005007303 src: /10.251.74.134:47808 dest: /10.251.74.134:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/sortrand2/_temporary/_task_200811101024_0003_r_000148_0/part-00148. blk_-8155924434005007303
+INFO dfs.DataNode$PacketResponder: Received block blk_-8155924434005007303 of size 67108864 from /10.251.199.245
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-8155924434005007303 terminating
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-8155924434005007303 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-8155924434005007303 of size 67108864 from /10.251.74.134
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-8155924434005007303 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-8155924434005007303 of size 67108864 from /10.251.74.134
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.199.245:50010 is added to blk_-8155924434005007303 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.203.179:50010 is added to blk_-8155924434005007303 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.74.134:50010 is added to blk_-8155924434005007303 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-8155924434005007303 is added to invalidSet of 10.251.199.245:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-8155924434005007303 is added to invalidSet of 10.251.203.179:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-8155924434005007303 is added to invalidSet of 10.251.74.134:50010
+INFO dfs.FSDataset: Deleting block blk_-8155924434005007303 file /mnt/hadoop/dfs/data/current/subdir44/blk_-8155924434005007303
+INFO dfs.FSDataset: Deleting block blk_-8155924434005007303 file /mnt/hadoop/dfs/data/current/subdir8/blk_-8155924434005007303
+INFO dfs.FSDataset: Deleting block blk_-8155924434005007303 file /mnt/hadoop/dfs/data/current/subdir19/blk_-8155924434005007303","This log shows a normal block lifecycle for a temporary MapReduce output file. The DataNode receives the block, the NameNode updates its blockMap, then the block is invalidated and deleted as part of standard cleanup of a temporary task directory. There are no error or timeout messages indicating an issue.",False,"All log messages show normal HDFS block life-cycle steps (allocation, replication, storage, invalidation and deletion) with no errors, warnings or unusual patterns.",False,False
+blk_-8594714056576335494,"INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/sortrand/_temporary/_task_200811092030_0002_r_000003_0/part-00003. blk_-8594714056576335494
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-8594714056576335494 src: /10.250.17.225:47147 dest: /10.250.17.225:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-8594714056576335494 src: /10.250.17.225:50651 dest: /10.250.17.225:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-8594714056576335494 src: /10.251.199.225:34735 dest: /10.251.199.225:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.67.211:50010 is added to blk_-8594714056576335494 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.199.225:50010 is added to blk_-8594714056576335494 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.17.225:50010 is added to blk_-8594714056576335494 size 67108864
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-8594714056576335494 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-8594714056576335494 of size 67108864 from /10.250.17.225
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-8594714056576335494 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-8594714056576335494 of size 67108864 from /10.250.17.225
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-8594714056576335494 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-8594714056576335494 of size 67108864 from /10.251.199.225
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-8594714056576335494 is added to invalidSet of 10.250.17.225:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-8594714056576335494 is added to invalidSet of 10.251.199.225:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-8594714056576335494 is added to invalidSet of 10.251.67.211:50010
+INFO dfs.FSDataset: Deleting block blk_-8594714056576335494 file /mnt/hadoop/dfs/data/current/subdir2/blk_-8594714056576335494
+INFO dfs.FSDataset: Deleting block blk_-8594714056576335494 file /mnt/hadoop/dfs/data/current/subdir40/blk_-8594714056576335494
+INFO dfs.FSDataset: Deleting block blk_-8594714056576335494 file /mnt/hadoop/dfs/data/current/subdir61/blk_-8594714056576335494","This block is allocated and replicated successfully to three DataNodes, then immediately marked invalid and deleted on each DataNode. Under normal operation HDFS should retain a newly written block until the client closes the file (and only then delete temporary files during a proper rename or job cleanup). Seeing a delete of the block right after addition indicates a premature or unexpected removal, which is anomalous.",True,"All log entries are INFO-level messages showing a normal block lifecycle: allocation, reception by DataNodes, replication updates, packet responders terminating properly, and eventual deletion. There are no ERROR or WARN messages, no timeouts or retries, and no indications of data corruption or communication failures.",False,False
+blk_-211628080501082301,"INFO dfs.DataNode$DataXceiver: Receiving block blk_-211628080501082301 src: /10.251.197.226:52243 dest: /10.251.197.226:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt3/_temporary/_task_200811101024_0007_m_000184_0/part-00184. blk_-211628080501082301
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-211628080501082301 src: /10.251.197.226:35142 dest: /10.251.197.226:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-211628080501082301 src: /10.251.203.129:43080 dest: /10.251.203.129:50010
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-211628080501082301 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-211628080501082301 of size 67108864 from /10.251.203.129
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-211628080501082301 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-211628080501082301 of size 67108864 from /10.251.197.226
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-211628080501082301 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-211628080501082301 of size 67108864 from /10.251.197.226
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.111.130:50010 is added to blk_-211628080501082301 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.203.129:50010 is added to blk_-211628080501082301 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.197.226:50010 is added to blk_-211628080501082301 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-211628080501082301 is added to invalidSet of 10.251.111.130:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-211628080501082301 is added to invalidSet of 10.251.197.226:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-211628080501082301 is added to invalidSet of 10.251.203.129:50010
+INFO dfs.FSDataset: Deleting block blk_-211628080501082301 file /mnt/hadoop/dfs/data/current/subdir62/blk_-211628080501082301
+INFO dfs.FSDataset: Deleting block blk_-211628080501082301 file /mnt/hadoop/dfs/data/current/subdir32/blk_-211628080501082301
+INFO dfs.FSDataset: Deleting block blk_-211628080501082301 file /mnt/hadoop/dfs/data/current/subdir52/blk_-211628080501082301","This is normal HDFS behavior for a temporary MapReduce block: the DataNode receives the block replicas, the NameNode records them, then the job cleanup invalidates and deletes the block from all replicas. No errors or warnings are present, and the quick delete after allocation is expected for files under a _temporary task directory.",False,"The log shows a normal HDFS write pipeline: block allocation, replication to DataNodes, acknowledgment, addition to the namespace, followed by a delete when the temporary file is cleaned up. There are no errors, warnings, or unusual patterns indicating an anomaly.",False,False
+blk_-2204430701842133697,"INFO dfs.DataNode$DataXceiver: Receiving block blk_-2204430701842133697 src: /10.250.15.240:40494 dest: /10.250.15.240:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt4/_temporary/_task_200811101024_0010_m_001282_0/part-01282. blk_-2204430701842133697
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-2204430701842133697 src: /10.250.15.240:47994 dest: /10.250.15.240:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-2204430701842133697 src: /10.251.90.81:54459 dest: /10.251.90.81:50010
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-2204430701842133697 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-2204430701842133697 of size 67108864 from /10.251.90.81
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-2204430701842133697 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-2204430701842133697 of size 67108864 from /10.250.15.240
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.90.81:50010 is added to blk_-2204430701842133697 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.17.177:50010 is added to blk_-2204430701842133697 size 67108864
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-2204430701842133697 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-2204430701842133697 of size 67108864 from /10.250.15.240
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.15.240:50010 is added to blk_-2204430701842133697 size 67108864","The NameNode’s blockMap was updated to include a replica on 10.250.17.177, yet there is no corresponding DataXceiver/PacketResponder receipt from that host. In a normal 3-replica pipeline you should see a receipt log for each DataNode. The missing reception for 10.250.17.177 indicates an inconsistency, so this block write is anomalous.",True,"All entries are INFO-level messages showing normal block allocation, receipt, and replication (64 MB size). There are no errors, warnings, or unusual events indicating failure or misbehavior.",False,False
+blk_-300039302261218621,"INFO dfs.DataNode$DataXceiver: Receiving block blk_-300039302261218621 src: /10.251.105.189:47681 dest: /10.251.105.189:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-300039302261218621 src: /10.250.14.38:43432 dest: /10.250.14.38:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-300039302261218621 src: /10.251.105.189:34798 dest: /10.251.105.189:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand3/_temporary/_task_200811101024_0005_m_001844_0/part-01844. blk_-300039302261218621
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-300039302261218621 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-300039302261218621 of size 67108864 from /10.251.105.189
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-300039302261218621 terminating
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-300039302261218621 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-300039302261218621 of size 67108864 from /10.250.14.38
+INFO dfs.DataNode$PacketResponder: Received block blk_-300039302261218621 of size 67108864 from /10.251.105.189
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.105.189:50010 is added to blk_-300039302261218621 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.10.176:50010 is added to blk_-300039302261218621 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.14.38:50010 is added to blk_-300039302261218621 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-300039302261218621 is added to invalidSet of 10.250.10.176:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-300039302261218621 is added to invalidSet of 10.250.14.38:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-300039302261218621 is added to invalidSet of 10.251.105.189:50010
+INFO dfs.FSDataset: Deleting block blk_-300039302261218621 file /mnt/hadoop/dfs/data/current/subdir4/blk_-300039302261218621
+INFO dfs.FSDataset: Deleting block blk_-300039302261218621 file /mnt/hadoop/dfs/data/current/subdir51/blk_-300039302261218621
+INFO dfs.FSDataset: Deleting block blk_-300039302261218621 file /mnt/hadoop/dfs/data/current/subdir38/blk_-300039302261218621","All operations succeed without errors: the DataNode receives the block, PacketResponders terminate cleanly, NameSystem updates blockMap for replication, then invalidates and deletes the temporary block files (consistent with cleanup of a _temporary task directory). This matches normal HDFS block lifecycle behavior.",False,"The DataXceiver logs show the node receiving `blk_-300039302261218621` from and sending it to itself (src and dest IP are identical), which should never happen in a proper HDFS replication pipeline. Additionally, NameSystem.addStoredBlock records a replica on 10.250.10.176 even though no DataXceiver received data from that host, indicating an inconsistent state. These behaviors are not part of a normal block write or cleanup cycle.",True,False
+blk_-4942670340898482442,"INFO dfs.DataNode$DataXceiver: Receiving block blk_-4942670340898482442 src: /10.251.197.161:44344 dest: /10.251.197.161:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-4942670340898482442 src: /10.250.10.6:58717 dest: /10.250.10.6:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-4942670340898482442 src: /10.251.197.161:57031 dest: /10.251.197.161:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt5/_temporary/_task_200811101024_0012_m_001841_0/part-01841. blk_-4942670340898482442
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-4942670340898482442 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-4942670340898482442 of size 67108864 from /10.251.197.161
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-4942670340898482442 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-4942670340898482442 of size 67108864 from /10.250.10.6
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-4942670340898482442 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-4942670340898482442 of size 67108864 from /10.251.197.161
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.197.161:50010 is added to blk_-4942670340898482442 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.122.65:50010 is added to blk_-4942670340898482442 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.10.6:50010 is added to blk_-4942670340898482442 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-4942670340898482442 is added to invalidSet of 10.250.10.6:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-4942670340898482442 is added to invalidSet of 10.251.122.65:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-4942670340898482442 is added to invalidSet of 10.251.197.161:50010
+INFO dfs.FSDataset: Deleting block blk_-4942670340898482442 file /mnt/hadoop/dfs/data/current/subdir30/blk_-4942670340898482442
+INFO dfs.FSDataset: Deleting block blk_-4942670340898482442 file /mnt/hadoop/dfs/data/current/subdir24/blk_-4942670340898482442
+INFO dfs.FSDataset: Deleting block blk_-4942670340898482442 file /mnt/hadoop/dfs/data/current/subdir39/blk_-4942670340898482442","This is normal HDFS behavior for handling temporary map‐reduce output blocks. The logs show allocation, receipt, replication to three DataNodes, and then cleanup of blocks in the _temporary directory when the task completes or is aborted. The immediate invalidation and deletion of these temporary blocks is expected.",False,"This block’s lifecycle (allocate, replicate to three DataNodes, then mark invalid and delete) follows the normal pattern for a MapReduce temporary file. All actions are INFO-level and expected (no errors, no unexpected time gaps), and the negative block ID is normal for temporary blocks. Therefore it is not anomalous.",False,False
+blk_4653578138111084728,"INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt/_temporary/_task_200811092030_0003_m_001447_0/part-01447. blk_4653578138111084728
+INFO dfs.DataNode$DataXceiver: Receiving block blk_4653578138111084728 src: /10.251.74.192:60601 dest: /10.251.74.192:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_4653578138111084728 src: /10.251.111.80:57971 dest: /10.251.111.80:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_4653578138111084728 src: /10.251.74.192:54336 dest: /10.251.74.192:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.90.239:50010 is added to blk_4653578138111084728 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.74.192:50010 is added to blk_4653578138111084728 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.111.80:50010 is added to blk_4653578138111084728 size 67108864
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_4653578138111084728 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_4653578138111084728 of size 67108864 from /10.251.74.192
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_4653578138111084728 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_4653578138111084728 of size 67108864 from /10.251.111.80
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_4653578138111084728 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_4653578138111084728 of size 67108864 from /10.251.74.192
+INFO dfs.DataNode$DataXceiver: 10.251.74.192:50010 Served block blk_4653578138111084728 to /10.251.74.192
+INFO dfs.DataNode$DataXceiver: 10.251.111.80:50010 Served block blk_4653578138111084728 to /10.251.111.80
+INFO dfs.DataNode$DataXceiver: 10.251.111.80:50010 Served block blk_4653578138111084728 to /10.251.111.80
+INFO dfs.DataNode$DataXceiver: 10.251.111.80:50010 Served block blk_4653578138111084728 to /10.251.111.80
+INFO dfs.DataNode$DataXceiver: 10.251.111.80:50010 Served block blk_4653578138111084728 to /10.251.111.80
+INFO dfs.DataNode$DataXceiver: 10.251.74.192:50010 Served block blk_4653578138111084728 to /10.251.74.192
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_4653578138111084728 is added to invalidSet of 10.251.111.80:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_4653578138111084728 is added to invalidSet of 10.251.74.192:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_4653578138111084728 is added to invalidSet of 10.251.90.239:50010
+INFO dfs.FSDataset: Deleting block blk_4653578138111084728 file /mnt/hadoop/dfs/data/current/subdir30/blk_4653578138111084728
+INFO dfs.FSDataset: Deleting block blk_4653578138111084728 file /mnt/hadoop/dfs/data/current/subdir50/blk_4653578138111084728
+INFO dfs.FSDataset: Deleting block blk_4653578138111084728 file /mnt/hadoop/dfs/data/current/subdir43/blk_4653578138111084728","This is normal HDFS block lifecycle activity for a temporary task: allocation of a new block, replication to DataNodes, confirmation of receipt, and subsequent cleanup (adding the block to the invalid set and deleting its files). No errors or warnings are present.",False,"The log shows a normal HDFS block lifecycle: allocation (allocateBlock), replication to DataNodes (Receiving block, addStoredBlock), data transmission (PacketResponder termination, Served block), and eventual cleanup (invalidSet additions and FSDataset deletions). No errors, warnings, or unusual patterns are present.",False,False
+blk_-6476242643563434666,"INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt/_temporary/_task_200811092030_0003_m_001246_0/part-01246. blk_-6476242643563434666
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-6476242643563434666 src: /10.251.199.150:34426 dest: /10.251.199.150:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-6476242643563434666 src: /10.251.199.150:59405 dest: /10.251.199.150:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-6476242643563434666 src: /10.250.19.227:60650 dest: /10.250.19.227:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.199.150:50010 is added to blk_-6476242643563434666 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.10.213:50010 is added to blk_-6476242643563434666 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.19.227:50010 is added to blk_-6476242643563434666 size 67108864
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-6476242643563434666 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-6476242643563434666 of size 67108864 from /10.251.199.150
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-6476242643563434666 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-6476242643563434666 of size 67108864 from /10.250.19.227
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-6476242643563434666 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-6476242643563434666 of size 67108864 from /10.251.199.150
+INFO dfs.DataNode$DataXceiver: 10.250.10.213:50010 Served block blk_-6476242643563434666 to /10.250.10.213
+INFO dfs.DataNode$DataXceiver: 10.250.10.213:50010 Served block blk_-6476242643563434666 to /10.251.123.132
+WARN dfs.DataNode$DataXceiver: 10.250.19.227:50010:Got exception while serving blk_-6476242643563434666 to /10.251.110.160:
+INFO dfs.DataNode$DataXceiver: 10.250.19.227:50010 Served block blk_-6476242643563434666 to /10.250.19.227
+WARN dfs.DataNode$DataXceiver: 10.250.19.227:50010:Got exception while serving blk_-6476242643563434666 to /10.251.110.160:
+INFO dfs.DataNode$DataXceiver: 10.251.199.150:50010 Served block blk_-6476242643563434666 to /10.251.123.132
+INFO dfs.DataNode$DataXceiver: 10.250.19.227:50010 Served block blk_-6476242643563434666 to /10.250.19.227
+WARN dfs.DataNode$DataXceiver: 10.250.19.227:50010:Got exception while serving blk_-6476242643563434666 to /10.251.110.160:
+INFO dfs.DataNode$DataXceiver: 10.250.19.227:50010 Served block blk_-6476242643563434666 to /10.251.123.132
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-6476242643563434666 is added to invalidSet of 10.250.10.213:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-6476242643563434666 is added to invalidSet of 10.250.19.227:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-6476242643563434666 is added to invalidSet of 10.251.199.150:50010
+INFO dfs.FSDataset: Deleting block blk_-6476242643563434666 file /mnt/hadoop/dfs/data/current/subdir63/blk_-6476242643563434666
+INFO dfs.FSDataset: Deleting block blk_-6476242643563434666 file /mnt/hadoop/dfs/data/current/subdir27/blk_-6476242643563434666
+INFO dfs.FSDataset: Deleting block blk_-6476242643563434666 file /mnt/hadoop/dfs/data/current/subdir37/blk_-6476242643563434666","This block’s lifecycle corresponds to a temporary MapReduce output: it’s allocated, replicated to three DataNodes, served (with WARNs caused by client disconnects on a temporary path), then marked invalid and deleted as part of normal cleanup. There are no signs of corruption or systemic failures.",False,"While most operations (block allocation, replication and deletion) proceed normally, there are multiple WARN entries indicating repeated exceptions when serving block blk_-6476242643563434666 to host 10.251.110.160. Those persistent transfer failures point to a network or I/O issue, which is anomalous compared to a clean INFO-only workflow.",True,False
+blk_5810691002683370605,"INFO dfs.DataNode$DataXceiver: Receiving block blk_5810691002683370605 src: /10.251.75.49:53880 dest: /10.251.75.49:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt5/_temporary/_task_200811101024_0012_m_001090_0/part-01090. blk_5810691002683370605
+INFO dfs.DataNode$DataXceiver: Receiving block blk_5810691002683370605 src: /10.251.38.214:35140 dest: /10.251.38.214:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_5810691002683370605 src: /10.251.75.49:40207 dest: /10.251.75.49:50010
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_5810691002683370605 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_5810691002683370605 of size 67108864 from /10.251.38.214
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_5810691002683370605 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_5810691002683370605 of size 67108864 from /10.251.75.49
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_5810691002683370605 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_5810691002683370605 of size 67108864 from /10.251.75.49
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.38.214:50010 is added to blk_5810691002683370605 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.203.166:50010 is added to blk_5810691002683370605 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.75.49:50010 is added to blk_5810691002683370605 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_5810691002683370605 is added to invalidSet of 10.251.203.166:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_5810691002683370605 is added to invalidSet of 10.251.38.214:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_5810691002683370605 is added to invalidSet of 10.251.75.49:50010
+INFO dfs.FSDataset: Deleting block blk_5810691002683370605 file /mnt/hadoop/dfs/data/current/subdir40/blk_5810691002683370605
+INFO dfs.FSDataset: Deleting block blk_5810691002683370605 file /mnt/hadoop/dfs/data/current/subdir39/blk_5810691002683370605
+INFO dfs.FSDataset: Deleting block blk_5810691002683370605 file /mnt/hadoop/dfs/data/current/subdir60/blk_5810691002683370605","This log shows normal HDFS block lifecycle for a temporary MapReduce task: the DataNode receives the block from multiple sources, the NameNode updates the blockMap, then the block is marked invalid and deleted as part of temporary-task cleanup. No errors, exceptions, or abnormal delays are present.",False,"All log entries are INFO-level and describe normal block operations: allocation, receiving, replication updates, and deletion. No errors or unusual patterns are present.",False,False
+blk_8487166197868621899,"INFO dfs.DataNode$DataXceiver: Receiving block blk_8487166197868621899 src: /10.251.89.155:46328 dest: /10.251.89.155:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_8487166197868621899 src: /10.251.89.155:33559 dest: /10.251.89.155:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand3/_temporary/_task_200811101024_0005_m_001975_0/part-01975. blk_8487166197868621899
+INFO dfs.DataNode$DataXceiver: Receiving block blk_8487166197868621899 src: /10.251.42.207:52324 dest: /10.251.42.207:50010
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_8487166197868621899 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_8487166197868621899 of size 67108864 from /10.251.89.155
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_8487166197868621899 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_8487166197868621899 of size 67108864 from /10.251.89.155
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_8487166197868621899 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_8487166197868621899 of size 67108864 from /10.251.42.207
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.42.207:50010 is added to blk_8487166197868621899 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.214.112:50010 is added to blk_8487166197868621899 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.89.155:50010 is added to blk_8487166197868621899 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_8487166197868621899 is added to invalidSet of 10.251.214.112:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_8487166197868621899 is added to invalidSet of 10.251.42.207:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_8487166197868621899 is added to invalidSet of 10.251.89.155:50010
+INFO dfs.FSDataset: Deleting block blk_8487166197868621899 file /mnt/hadoop/dfs/data/current/subdir61/blk_8487166197868621899
+INFO dfs.FSDataset: Deleting block blk_8487166197868621899 file /mnt/hadoop/dfs/data/current/subdir46/blk_8487166197868621899
+INFO dfs.FSDataset: Deleting block blk_8487166197868621899 file /mnt/hadoop/dfs/data/current/subdir3/blk_8487166197868621899","This sequence reflects normal HDFS behavior: a new temporary block is allocated and streamed to the three replicas (DataXceiver and PacketResponder log entries), then once the file is closed (or cleaned up after a temporary map output), the NameNode marks the block as invalid and each DataNode deletes the block file. There are no error or timeout messages—only the standard allocate, replicate, addStoredBlock, invalidate, and delete steps—so this log block is normal.",False,"All log entries are INFO-level and follow the expected HDFS block lifecycle: allocation, data transfer via PacketResponders, registration on DataNodes, and clean deletion/invalidation. No ERROR or WARN entries or unusual delays are present.",False,False
+blk_4968108883625836733,"INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt/_temporary/_task_200811092030_0003_m_000868_0/part-00868. blk_4968108883625836733
+INFO dfs.DataNode$DataXceiver: Receiving block blk_4968108883625836733 src: /10.251.195.52:38266 dest: /10.251.195.52:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_4968108883625836733 src: /10.250.6.4:39107 dest: /10.250.6.4:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_4968108883625836733 src: /10.250.6.4:52454 dest: /10.250.6.4:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.6.4:50010 is added to blk_4968108883625836733 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.195.52:50010 is added to blk_4968108883625836733 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.106.10:50010 is added to blk_4968108883625836733 size 67108864
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_4968108883625836733 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_4968108883625836733 of size 67108864 from /10.251.195.52
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_4968108883625836733 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_4968108883625836733 of size 67108864 from /10.250.6.4
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_4968108883625836733 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_4968108883625836733 of size 67108864 from /10.250.6.4
+INFO dfs.DataNode$DataXceiver: 10.251.195.52:50010 Served block blk_4968108883625836733 to /10.251.107.50
+INFO dfs.DataNode$DataXceiver: 10.251.106.10:50010 Served block blk_4968108883625836733 to /10.251.106.10
+WARN dfs.DataNode$DataXceiver: 10.250.6.4:50010:Got exception while serving blk_4968108883625836733 to /10.250.6.4:
+INFO dfs.DataNode$DataXceiver: 10.251.195.52:50010 Served block blk_4968108883625836733 to /10.251.107.50
+INFO dfs.DataNode$DataXceiver: 10.251.106.10:50010 Served block blk_4968108883625836733 to /10.251.106.10
+WARN dfs.DataNode$DataXceiver: 10.251.195.52:50010:Got exception while serving blk_4968108883625836733 to /10.251.71.240:
+INFO dfs.DataNode$DataXceiver: 10.251.195.52:50010 Served block blk_4968108883625836733 to /10.251.107.50
+INFO dfs.DataNode$DataXceiver: 10.251.106.10:50010 Served block blk_4968108883625836733 to /10.251.106.10
+WARN dfs.DataNode$DataXceiver: 10.251.195.52:50010:Got exception while serving blk_4968108883625836733 to /10.251.126.255:
+INFO dfs.DataNode$DataXceiver: 10.251.106.10:50010 Served block blk_4968108883625836733 to /10.251.107.50
+WARN dfs.DataNode$DataXceiver: 10.251.195.52:50010:Got exception while serving blk_4968108883625836733 to /10.251.71.240:
+INFO dfs.DataNode$DataXceiver: 10.251.195.52:50010 Served block blk_4968108883625836733 to /10.251.195.52
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_4968108883625836733 is added to invalidSet of 10.250.6.4:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_4968108883625836733 is added to invalidSet of 10.251.106.10:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_4968108883625836733 is added to invalidSet of 10.251.195.52:50010
+INFO dfs.FSDataset: Deleting block blk_4968108883625836733 file /mnt/hadoop/dfs/data/current/subdir57/blk_4968108883625836733
+INFO dfs.FSDataset: Deleting block blk_4968108883625836733 file /mnt/hadoop/dfs/data/current/subdir19/blk_4968108883625836733
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: addStoredBlock request received for blk_4968108883625836733 on 10.251.106.10:50010 size 67108864 But it does not belong to any file.
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.106.10:50010 is added to blk_4968108883625836733 size 67108864
+INFO dfs.FSDataset: Deleting block blk_4968108883625836733 file /mnt/hadoop/dfs/data/current/subdir11/blk_4968108883625836733","The log shows multiple WARNs indicating DataXceiver exceptions while serving the same block to clients, the block was then added to invalid sets on all replicas and deleted from the data directories, and finally there’s an unexpected addStoredBlock call for a block that no longer belongs to any file. These symptoms point to corruption or metadata inconsistency rather than a normal operation.",True,"Multiple WARN messages indicate serve failures and, more critically, an addStoredBlock request for blk_4968108883625836733 that “does not belong to any file” is logged after the block was deleted. This metadata inconsistency is anomalous.",True,True
+blk_7249297466180119551,"INFO dfs.DataNode$DataXceiver: Receiving block blk_7249297466180119551 src: /10.251.214.67:53485 dest: /10.251.214.67:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_7249297466180119551 src: /10.251.214.67:36741 dest: /10.251.214.67:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand5/_temporary/_task_200811101024_0011_m_000911_0/part-00911. blk_7249297466180119551
+INFO dfs.DataNode$DataXceiver: Receiving block blk_7249297466180119551 src: /10.251.199.225:50599 dest: /10.251.199.225:50010
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_7249297466180119551 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_7249297466180119551 of size 67108864 from /10.251.214.67
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_7249297466180119551 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_7249297466180119551 of size 67108864 from /10.251.214.67
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_7249297466180119551 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_7249297466180119551 of size 67108864 from /10.251.199.225
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.214.67:50010 is added to blk_7249297466180119551 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.199.225:50010 is added to blk_7249297466180119551 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.67.225:50010 is added to blk_7249297466180119551 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_7249297466180119551 is added to invalidSet of 10.251.199.225:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_7249297466180119551 is added to invalidSet of 10.251.214.67:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_7249297466180119551 is added to invalidSet of 10.251.67.225:50010
+INFO dfs.FSDataset: Deleting block blk_7249297466180119551 file /mnt/hadoop/dfs/data/current/subdir2/blk_7249297466180119551
+INFO dfs.FSDataset: Deleting block blk_7249297466180119551 file /mnt/hadoop/dfs/data/current/subdir28/blk_7249297466180119551
+INFO dfs.FSDataset: Deleting block blk_7249297466180119551 file /mnt/hadoop/dfs/data/current/subdir4/blk_7249297466180119551","This log shows a temporary block (under a _temporary/_task_… path) being allocated, streamed to DataNodes, then immediately marked invalid and deleted as part of normal MapReduce task cleanup. There are no error or warning messages and the rapid delete of a temp block is expected behavior rather than an HDFS anomaly.",False,"The log shows a normal HDFS block lifecycle for a temporary MapReduce task: allocation, replication to DataNodes, reporting to the NameNode, and eventual cleanup/deletion of the temporary block. No error or unusual activity is present.",False,False
+blk_2501927585680429740,"INFO dfs.DataNode$DataXceiver: Receiving block blk_2501927585680429740 src: /10.251.197.161:42531 dest: /10.251.197.161:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt4/_temporary/_task_200811101024_0010_m_001966_0/part-01966. blk_2501927585680429740
+INFO dfs.DataNode$DataXceiver: Receiving block blk_2501927585680429740 src: /10.251.90.81:58860 dest: /10.251.90.81:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_2501927585680429740 src: /10.251.197.161:33477 dest: /10.251.197.161:50010
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_2501927585680429740 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_2501927585680429740 of size 67108864 from /10.251.90.81
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_2501927585680429740 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_2501927585680429740 of size 67108864 from /10.251.197.161
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.197.161:50010 is added to blk_2501927585680429740 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.31.5:50010 is added to blk_2501927585680429740 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.90.81:50010 is added to blk_2501927585680429740 size 67108864
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_2501927585680429740 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_2501927585680429740 of size 67108864 from /10.251.197.161","The log shows three replicas being registered (10.251.197.161, 10.251.31.5 and 10.251.90.81), but we only see incoming block reception entries for .197.161 and .90.81 — there’s no DataXceiver receive for .31.5. In addition, packet responder terminations and 'Received block' messages are out of order and duplicated (e.g. two receives from .197.161), which indicates an inconsistent or mis-logged replication pipeline rather than a normal block write.",True,"All log entries show normal block allocation, reception, and replication of a 64 MB HDFS block with no errors, warnings, or unusual behavior.",False,False
+blk_-2217352028330007059,"INFO dfs.DataNode$DataXceiver: Receiving block blk_-2217352028330007059 src: /10.251.107.196:40402 dest: /10.251.107.196:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-2217352028330007059 src: /10.251.107.196:58361 dest: /10.251.107.196:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_200811092030_0001_m_001872_0/part-01872. blk_-2217352028330007059
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-2217352028330007059 src: /10.251.26.177:48497 dest: /10.251.26.177:50010
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-2217352028330007059 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-2217352028330007059 of size 67108864 from /10.251.26.177
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.39.209:50010 is added to blk_-2217352028330007059 size 67108864
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-2217352028330007059 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-2217352028330007059 of size 67108864 from /10.251.107.196
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-2217352028330007059 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-2217352028330007059 of size 67108864 from /10.251.107.196
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.26.177:50010 is added to blk_-2217352028330007059 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.107.196:50010 is added to blk_-2217352028330007059 size 67108864
+WARN dfs.DataNode$DataXceiver: 10.251.26.177:50010:Got exception while serving blk_-2217352028330007059 to /10.251.198.33:
+INFO dfs.DataNode$DataXceiver: 10.251.26.177:50010 Served block blk_-2217352028330007059 to /10.251.198.33
+WARN dfs.DataNode$DataXceiver: 10.251.39.209:50010:Got exception while serving blk_-2217352028330007059 to /10.251.203.246:
+INFO dfs.DataBlockScanner: Verification succeeded for blk_-2217352028330007059
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-2217352028330007059 is added to invalidSet of 10.251.107.196:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-2217352028330007059 is added to invalidSet of 10.251.26.177:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-2217352028330007059 is added to invalidSet of 10.251.39.209:50010
+INFO dfs.FSDataset: Deleting block blk_-2217352028330007059 file /mnt/hadoop/dfs/data/current/subdir21/blk_-2217352028330007059
+INFO dfs.FSDataset: Deleting block blk_-2217352028330007059 file /mnt/hadoop/dfs/data/current/subdir33/blk_-2217352028330007059
+INFO dfs.FSDataset: Deleting block blk_-2217352028330007059 file /mnt/hadoop/dfs/data/current/subdir16/blk_-2217352028330007059","This log shows the normal lifecycle of a temporary MapReduce output block: it’s allocated, received, verified, briefly encounters transport warnings (common in replication), then is moved to the invalid set and deleted as part of the job’s cleanup of its _temporary directory. There are no signs of persistent corruption or systemic failure.",False,"The log shows a normal HDFS block lifecycle: allocation, replication to DataNodes, successful checksum verification, serving to clients, and eventual invalidation and deletion. The WARN messages are transient I/O exceptions when serving but did not prevent replication or cause data corruption (verification succeeded). Block removal is expected after the job completes.",False,False
+blk_-4287807075940334639,"INFO dfs.DataNode$DataXceiver: Receiving block blk_-4287807075940334639 src: /10.250.11.100:38968 dest: /10.250.11.100:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-4287807075940334639 src: /10.251.199.86:60603 dest: /10.251.199.86:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-4287807075940334639 src: /10.251.199.86:46365 dest: /10.251.199.86:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt3/_temporary/_task_200811101024_0007_m_001950_0/part-01950. blk_-4287807075940334639
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-4287807075940334639 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-4287807075940334639 of size 67108864 from /10.250.11.100
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-4287807075940334639 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-4287807075940334639 of size 67108864 from /10.251.199.86
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.11.100:50010 is added to blk_-4287807075940334639 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.202.209:50010 is added to blk_-4287807075940334639 size 67108864
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-4287807075940334639 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-4287807075940334639 of size 67108864 from /10.251.199.86
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.199.86:50010 is added to blk_-4287807075940334639 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-4287807075940334639 is added to invalidSet of 10.250.11.100:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-4287807075940334639 is added to invalidSet of 10.251.199.86:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-4287807075940334639 is added to invalidSet of 10.251.202.209:50010
+INFO dfs.FSDataset: Deleting block blk_-4287807075940334639 file /mnt/hadoop/dfs/data/current/subdir47/blk_-4287807075940334639
+INFO dfs.FSDataset: Deleting block blk_-4287807075940334639 file /mnt/hadoop/dfs/data/current/subdir17/blk_-4287807075940334639
+INFO dfs.FSDataset: Deleting block blk_-4287807075940334639 file /mnt/hadoop/dfs/data/current/subdir46/blk_-4287807075940334639","All of the log entries correspond to the normal HDFS pipeline for writing a temporary MapReduce block and then cleaning it up when the task finishes.  You see an allocateBlock call, three DataXceiver receive calls (client → DN1 → DN2 → DN3), addStoredBlock updates on the NameNode for each replica, and finally the invalidation and file‐system deletes of the temporary block.  There are no error messages or suspicious gaps in the flow—this is expected behavior for MR‐generated temporary blocks.",False,"The log shows a normal HDFS block lifecycle: allocation of blk_-4287807075940334639, reception on DataNodes, updates to the blockMap, and eventual invalidation/deletion of the block files. There are no errors or unusual status codes, indicating expected behavior after a job's temporary output is cleaned up.",False,False
+blk_6658816612740502641,"INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_200811101024_0001_m_001221_0/part-01221. blk_6658816612740502641
+INFO dfs.DataNode$DataXceiver: Receiving block blk_6658816612740502641 src: /10.251.127.47:47326 dest: /10.251.127.47:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_6658816612740502641 src: /10.251.127.47:41888 dest: /10.251.127.47:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_6658816612740502641 src: /10.251.91.159:50601 dest: /10.251.91.159:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.127.47:50010 is added to blk_6658816612740502641 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.111.209:50010 is added to blk_6658816612740502641 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.91.159:50010 is added to blk_6658816612740502641 size 67108864
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_6658816612740502641 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_6658816612740502641 of size 67108864 from /10.251.127.47
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_6658816612740502641 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_6658816612740502641 of size 67108864 from /10.251.127.47
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_6658816612740502641 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_6658816612740502641 of size 67108864 from /10.251.91.159
+WARN dfs.DataNode$DataXceiver: 10.251.127.47:50010:Got exception while serving blk_6658816612740502641 to /10.251.127.47:
+INFO dfs.DataNode$DataXceiver: 10.251.127.47:50010 Served block blk_6658816612740502641 to /10.251.127.47
+WARN dfs.DataNode$DataXceiver: 10.251.111.209:50010:Got exception while serving blk_6658816612740502641 to /10.251.202.181:
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_6658816612740502641 is added to invalidSet of 10.251.111.209:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_6658816612740502641 is added to invalidSet of 10.251.127.47:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_6658816612740502641 is added to invalidSet of 10.251.91.159:50010
+INFO dfs.FSDataset: Deleting block blk_6658816612740502641 file /mnt/hadoop/dfs/data/current/subdir59/blk_6658816612740502641
+INFO dfs.FSDataset: Deleting block blk_6658816612740502641 file /mnt/hadoop/dfs/data/current/subdir49/blk_6658816612740502641
+INFO dfs.FSDataset: Deleting block blk_6658816612740502641 file /mnt/hadoop/dfs/data/current/subdir12/blk_6658816612740502641","Several DataXceiver WARNs indicate exceptions serving the block to peers. The NameSystem then marks the block invalid on all three replicas and the FSDataset deletes all local copies. This chain of errors and forced deletion signals a corruption or I/O failure, not normal operation.",True,"This sequence shows an HDFS block being allocated for a temporary job file, replicated to three data-nodes, then invalidated and deleted once the job completes. The WARN entries are transient DataXceiver exceptions (likely brief network hiccups or client shutdown) and no persistent errors or data-loss conditions appear. Overall the allocate→write→addStoredBlock→delete→FSDataset delete pattern is expected for temporary job output files.",False,False
+blk_-1616486347728632003,"INFO dfs.DataNode$DataXceiver: Receiving block blk_-1616486347728632003 src: /10.251.199.225:38811 dest: /10.251.199.225:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt2/_temporary/_task_200811101024_0002_m_001594_0/part-01594. blk_-1616486347728632003
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-1616486347728632003 src: /10.251.73.220:49816 dest: /10.251.73.220:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-1616486347728632003 src: /10.251.199.225:41350 dest: /10.251.199.225:50010
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-1616486347728632003 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-1616486347728632003 of size 67108864 from /10.251.73.220
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-1616486347728632003 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-1616486347728632003 of size 67108864 from /10.251.199.225
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.73.220:50010 is added to blk_-1616486347728632003 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.202.134:50010 is added to blk_-1616486347728632003 size 67108864
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-1616486347728632003 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-1616486347728632003 of size 67108864 from /10.251.199.225
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.199.225:50010 is added to blk_-1616486347728632003 size 67108864
+INFO dfs.DataNode$DataXceiver: 10.251.73.220:50010 Served block blk_-1616486347728632003 to /10.251.73.220
+WARN dfs.DataNode$DataXceiver: 10.251.199.225:50010:Got exception while serving blk_-1616486347728632003 to /10.251.123.132:
+INFO dfs.DataNode$DataXceiver: 10.251.199.225:50010 Served block blk_-1616486347728632003 to /10.251.199.225
+INFO dfs.DataNode$DataXceiver: 10.251.73.220:50010 Served block blk_-1616486347728632003 to /10.251.73.220
+WARN dfs.DataNode$DataXceiver: 10.251.199.225:50010:Got exception while serving blk_-1616486347728632003 to /10.251.199.225:
+INFO dfs.DataNode$DataXceiver: 10.251.199.225:50010 Served block blk_-1616486347728632003 to /10.251.123.132
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-1616486347728632003 is added to invalidSet of 10.251.199.225:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-1616486347728632003 is added to invalidSet of 10.251.202.134:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-1616486347728632003 is added to invalidSet of 10.251.73.220:50010
+INFO dfs.FSDataset: Deleting block blk_-1616486347728632003 file /mnt/hadoop/dfs/data/current/subdir31/blk_-1616486347728632003
+INFO dfs.FSDataset: Deleting block blk_-1616486347728632003 file /mnt/hadoop/dfs/data/current/subdir6/blk_-1616486347728632003
+INFO dfs.FSDataset: Deleting block blk_-1616486347728632003 file /mnt/hadoop/dfs/data/current/subdir27/blk_-1616486347728632003","This block write saw multiple WARN-level errors during block serving (exceptions while piping to other DataNodes), and immediately after the write all replicas were added to the invalidSet and deleted. HDFS only invalidates and deletes a block when it detects corruption or a failed replication, so this behavior is abnormal.",True,"This log shows the normal life‐cycle of a temporary HDFS block: allocation, receipt on multiple DataNodes, reporting to the NameNode, serving to mappers (including local reads), and eventual invalidation/deletion. The WARN entries reflect spurious I/O errors when serving the block but do not indicate a systemic failure or data corruption.",False,False
+blk_-7932869029465537575,"INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt/_temporary/_task_200811092030_0003_m_000529_0/part-00529. blk_-7932869029465537575
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-7932869029465537575 src: /10.251.42.16:35539 dest: /10.251.42.16:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-7932869029465537575 src: /10.251.42.16:44727 dest: /10.251.42.16:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-7932869029465537575 src: /10.251.71.16:58338 dest: /10.251.71.16:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.42.16:50010 is added to blk_-7932869029465537575 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.71.16:50010 is added to blk_-7932869029465537575 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.91.159:50010 is added to blk_-7932869029465537575 size 67108864
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-7932869029465537575 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-7932869029465537575 of size 67108864 from /10.251.42.16
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-7932869029465537575 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-7932869029465537575 of size 67108864 from /10.251.42.16
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-7932869029465537575 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-7932869029465537575 of size 67108864 from /10.251.71.16
+INFO dfs.DataNode$DataXceiver: 10.251.91.159:50010 Served block blk_-7932869029465537575 to /10.251.91.159
+WARN dfs.DataNode$DataXceiver: 10.251.42.16:50010:Got exception while serving blk_-7932869029465537575 to /10.251.75.228:
+INFO dfs.DataNode$DataXceiver: 10.251.42.16:50010 Served block blk_-7932869029465537575 to /10.251.42.9
+INFO dfs.DataNode$DataXceiver: 10.251.91.159:50010 Served block blk_-7932869029465537575 to /10.251.91.159
+WARN dfs.DataNode$DataXceiver: 10.251.71.16:50010:Got exception while serving blk_-7932869029465537575 to /10.250.19.16:
+INFO dfs.DataNode$DataXceiver: 10.251.91.159:50010 Served block blk_-7932869029465537575 to /10.251.42.9
+INFO dfs.DataNode$DataXceiver: 10.251.91.159:50010 Served block blk_-7932869029465537575 to /10.251.91.159
+INFO dfs.DataNode$DataXceiver: 10.251.71.16:50010 Served block blk_-7932869029465537575 to /10.251.126.227
+WARN dfs.DataNode$DataXceiver: 10.251.91.159:50010:Got exception while serving blk_-7932869029465537575 to /10.250.19.16:
+INFO dfs.DataNode$DataXceiver: 10.251.91.159:50010 Served block blk_-7932869029465537575 to /10.251.91.159
+WARN dfs.DataNode$DataXceiver: 10.251.42.16:50010:Got exception while serving blk_-7932869029465537575 to /10.251.75.228:
+INFO dfs.DataNode$DataXceiver: 10.251.42.16:50010 Served block blk_-7932869029465537575 to /10.251.126.227
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-7932869029465537575 is added to invalidSet of 10.251.42.16:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-7932869029465537575 is added to invalidSet of 10.251.71.16:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-7932869029465537575 is added to invalidSet of 10.251.91.159:50010
+INFO dfs.FSDataset: Deleting block blk_-7932869029465537575 file /mnt/hadoop/dfs/data/current/subdir1/blk_-7932869029465537575
+INFO dfs.FSDataset: Deleting block blk_-7932869029465537575 file /mnt/hadoop/dfs/data/current/subdir35/blk_-7932869029465537575
+INFO dfs.FSDataset: Deleting block blk_-7932869029465537575 file /mnt/hadoop/dfs/data/current/subdir17/blk_-7932869029465537575","This is a negative-ID block under a _temporary job directory, indicating an under-construction (uncommitted) block. The DataNodes log WARNs when clients abort pipeline writes, and the NameSystem.delete steps show the expected cleanup of a temporary task file (not a corrupt, production block). This is normal HDFS cleanup behavior rather than an anomaly.",False,"The logs show a normal HDFS lifecycle for a temporary job file: block allocation, replication to three DataNodes, client reads (with a few transient WARN connection failures), then graceful invalidation and deletion. All block sizes and operations are expected, and occasional DataXceiver WARNs are typical network hiccups rather than a systemic failure.",False,False
+blk_-428294121496616328,"INFO dfs.DataNode$DataXceiver: Receiving block blk_-428294121496616328 src: /10.251.67.113:48698 dest: /10.251.67.113:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-428294121496616328 src: /10.251.126.5:54796 dest: /10.251.126.5:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-428294121496616328 src: /10.251.67.113:40303 dest: /10.251.67.113:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand8/_temporary/_task_200811101024_0015_m_000382_0/part-00382. blk_-428294121496616328
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-428294121496616328 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-428294121496616328 of size 67108864 from /10.251.67.113
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-428294121496616328 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-428294121496616328 of size 67108864 from /10.251.126.5
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-428294121496616328 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-428294121496616328 of size 67108864 from /10.251.67.113
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.42.16:50010 is added to blk_-428294121496616328 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.67.113:50010 is added to blk_-428294121496616328 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.126.5:50010 is added to blk_-428294121496616328 size 67108864","All of the entries are INFO-level messages tracing a normal write and replication pipeline for a newly allocated block (blk_-428294121496616328). The NameNode allocates the block, each of the three DataNodes successfully receives the full 64 MB chunk, and the NameNode updates its block map with three replicas—there are no errors, timeouts, or stray IPs involved. This matches expected HDFS behavior, so it is not anomalous.",False,"All entries are INFO-level and show the normal pipeline of block allocation, reception by DataNodes, PacketResponder termination, and NameSystem blockMap updates. There are no error or warning messages, no failed transfers or unusual retries—this is normal HDFS block write/replication behavior.",False,False
+blk_-6271804810951058200,"INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt2/_temporary/_task_200811101024_0002_m_001363_0/part-01363. blk_-6271804810951058200
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-6271804810951058200 src: /10.251.71.68:53713 dest: /10.251.71.68:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-6271804810951058200 src: /10.251.71.68:58867 dest: /10.251.71.68:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-6271804810951058200 src: /10.251.39.209:47444 dest: /10.251.39.209:50010
+INFO dfs.DataNode$PacketResponder: Received block blk_-6271804810951058200 of size 67108864 from /10.251.71.68
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-6271804810951058200 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-6271804810951058200 of size 67108864 from /10.251.39.209
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.39.209:50010 is added to blk_-6271804810951058200 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.75.79:50010 is added to blk_-6271804810951058200 size 67108864
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-6271804810951058200 terminating
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-6271804810951058200 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-6271804810951058200 of size 67108864 from /10.251.71.68
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.71.68:50010 is added to blk_-6271804810951058200 size 67108864
+INFO dfs.DataNode$DataXceiver: 10.251.39.209:50010 Served block blk_-6271804810951058200 to /10.251.39.209
+INFO dfs.DataNode$DataXceiver: 10.251.75.79:50010 Served block blk_-6271804810951058200 to /10.251.121.224
+WARN dfs.DataNode$DataXceiver: 10.251.71.68:50010:Got exception while serving blk_-6271804810951058200 to /10.250.7.96:
+INFO dfs.DataNode$DataXceiver: 10.251.75.79:50010 Served block blk_-6271804810951058200 to /10.251.121.224
+INFO dfs.DataNode$DataXceiver: 10.251.39.209:50010 Served block blk_-6271804810951058200 to /10.251.39.209
+WARN dfs.DataNode$DataXceiver: 10.251.75.79:50010:Got exception while serving blk_-6271804810951058200 to /10.250.7.96:
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-6271804810951058200 is added to invalidSet of 10.251.39.209:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-6271804810951058200 is added to invalidSet of 10.251.71.68:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-6271804810951058200 is added to invalidSet of 10.251.75.79:50010
+INFO dfs.FSDataset: Deleting block blk_-6271804810951058200 file /mnt/hadoop/dfs/data/current/subdir53/blk_-6271804810951058200
+INFO dfs.FSDataset: Deleting block blk_-6271804810951058200 file /mnt/hadoop/dfs/data/current/subdir61/blk_-6271804810951058200
+INFO dfs.FSDataset: Deleting block blk_-6271804810951058200 file /mnt/hadoop/dfs/data/current/subdir42/blk_-6271804810951058200","This block was allocated and successfully received on three DataNodes, but subsequent WARN messages show exceptions when the DataNodes attempted to serve the block to a client (10.250.7.96). Immediately afterward, the NameSystem marked the block invalid on all replicas and the dataset logs show deletion of the block files. A healthy block would not be globally invalidated and removed right after replication, so this sequence indicates corruption or severe I/O errors, making it anomalous.",True,Multiple WARN entries showing data nodes failed to serve the block (Got exception while serving blk_-6271804810951058200 to /10.250.7.96) indicate read/serve errors. These repeated exceptions are not part of a normal healthy HDFS block lifecycle and point to an anomaly.,True,False
+blk_3146646801166508067,"INFO dfs.DataNode$DataXceiver: Receiving block blk_3146646801166508067 src: /10.251.214.18:50139 dest: /10.251.214.18:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_3146646801166508067 src: /10.250.11.53:40817 dest: /10.250.11.53:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_3146646801166508067 src: /10.250.11.53:35981 dest: /10.250.11.53:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand7/_temporary/_task_200811101024_0014_m_000040_0/part-00040. blk_3146646801166508067
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_3146646801166508067 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_3146646801166508067 of size 67108864 from /10.251.214.18
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_3146646801166508067 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_3146646801166508067 of size 67108864 from /10.250.11.53
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_3146646801166508067 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_3146646801166508067 of size 67108864 from /10.250.11.53
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.214.18:50010 is added to blk_3146646801166508067 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.43.210:50010 is added to blk_3146646801166508067 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.11.53:50010 is added to blk_3146646801166508067 size 67108864","This log shows the normal pipeline of writing and replicating an HDFS block. The DataNode receives the block from the client/data nodes, PacketResponders terminate after full block reception, and the NameSystem records each replica addition on three distinct DataNodes with the correct block size. No errors, timeouts, or corruption warnings are present, so this is normal operation.",False,"This log shows a normal HDFS block write: the NameNode allocates a 64 MB block, three DataNodes receive it in a standard pipeline, and addStoredBlock updates complete without errors. All entries are INFO-level with no warnings or failures.",False,False
+blk_-6562133938331927850,"INFO dfs.DataNode$DataXceiver: Receiving block blk_-6562133938331927850 src: /10.251.109.209:57693 dest: /10.251.109.209:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand8/_temporary/_task_200811101024_0015_m_001618_0/part-01618. blk_-6562133938331927850
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-6562133938331927850 src: /10.251.193.175:51184 dest: /10.251.193.175:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-6562133938331927850 src: /10.251.109.209:50506 dest: /10.251.109.209:50010
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-6562133938331927850 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-6562133938331927850 of size 67108864 from /10.251.193.175
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-6562133938331927850 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-6562133938331927850 of size 67108864 from /10.251.109.209
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-6562133938331927850 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-6562133938331927850 of size 67108864 from /10.251.109.209
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.109.209:50010 is added to blk_-6562133938331927850 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.43.21:50010 is added to blk_-6562133938331927850 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.193.175:50010 is added to blk_-6562133938331927850 size 67108864","This log sequence shows a standard HDFS write pipeline: a client (on 10.251.109.209) sends a new block (with a negative ID during streaming), the DataNode accepts it, forwards it to successor nodes (10.251.193.175 and 10.251.43.21), and the NameNode updates its blockMap. There are no error or warning messages, and the negative block ID is normal for an in-flight write. Thus the block activity is normal.",False,"All entries are INFO-level and describe a normal HDFS block allocation and replication pipeline. The block is allocated, received in 64 MB chunks, PacketResponders terminate normally, and the NameSystem updates blockMap with three replicas without any errors or warnings.",False,False
+blk_5574944396501251160,"INFO dfs.DataNode$DataXceiver: Receiving block blk_5574944396501251160 src: /10.251.67.113:47057 dest: /10.251.67.113:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_5574944396501251160 src: /10.251.67.113:57285 dest: /10.251.67.113:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand3/_temporary/_task_200811101024_0005_m_000692_0/part-00692. blk_5574944396501251160
+INFO dfs.DataNode$DataXceiver: Receiving block blk_5574944396501251160 src: /10.251.202.181:55457 dest: /10.251.202.181:50010
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_5574944396501251160 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_5574944396501251160 of size 67108864 from /10.251.67.113
+INFO dfs.DataNode$PacketResponder: Received block blk_5574944396501251160 of size 67108864 from /10.251.67.113
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_5574944396501251160 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_5574944396501251160 of size 67108864 from /10.251.202.181
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.194.213:50010 is added to blk_5574944396501251160 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.67.113:50010 is added to blk_5574944396501251160 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.202.181:50010 is added to blk_5574944396501251160 size 67108864
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_5574944396501251160 terminating
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_5574944396501251160 is added to invalidSet of 10.251.194.213:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_5574944396501251160 is added to invalidSet of 10.251.202.181:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_5574944396501251160 is added to invalidSet of 10.251.67.113:50010
+INFO dfs.FSDataset: Deleting block blk_5574944396501251160 file /mnt/hadoop/dfs/data/current/subdir31/blk_5574944396501251160
+INFO dfs.FSDataset: Deleting block blk_5574944396501251160 file /mnt/hadoop/dfs/data/current/subdir14/blk_5574944396501251160
+INFO dfs.FSDataset: Deleting block blk_5574944396501251160 file /mnt/hadoop/dfs/data/current/subdir31/blk_5574944396501251160","The log shows normal block allocation, replication to three DataNodes, and subsequent invalidation and deletion of temporary blocks from a MapReduce job (_temporary folder). This clean-up sequence is expected behavior, not an anomaly.",False,"This is the normal life-cycle of a temporary HDFS block: allocation, replication to three DataNodes (10.251.67.113, 10.251.202.181, 10.251.194.213), acknowledgment (PacketResponder logs), NameNode updates (addStoredBlock), followed by invalidation of the temporary block and its deletion on each DataNode (FSDataset logs). No errors or unusual patterns are present.",False,False
+blk_-8897467657321571572,"INFO dfs.DataNode$DataXceiver: Receiving block blk_-8897467657321571572 src: /10.250.10.176:53653 dest: /10.250.10.176:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-8897467657321571572 src: /10.251.106.50:44709 dest: /10.251.106.50:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-8897467657321571572 src: /10.250.10.176:34237 dest: /10.250.10.176:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand8/_temporary/_task_200811101024_0015_m_000396_0/part-00396. blk_-8897467657321571572
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-8897467657321571572 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-8897467657321571572 of size 67108864 from /10.251.106.50
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-8897467657321571572 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-8897467657321571572 of size 67108864 from /10.250.10.176
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-8897467657321571572 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-8897467657321571572 of size 67108864 from /10.250.10.176
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.106.50:50010 is added to blk_-8897467657321571572 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.10.176:50010 is added to blk_-8897467657321571572 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.29.239:50010 is added to blk_-8897467657321571572 size 67108864","These entries show a standard HDFS block replication cycle: allocation of a 64 MB block (blk_-8897467657321571572), repeated receipt from pipeline peers, PacketResponder terminations, and blockMap updates. There are no errors, warnings, or unexpected values, so this log block is normal.",False,"All log entries are at INFO level and describe routine block allocation, reception, replication acknowledgment, and updates to the NameNode’s block map. There are no error messages, warnings, or unusual patterns indicating a failure or misbehavior.",False,False
+blk_9090514259289206027,"INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt/_temporary/_task_200811092030_0003_m_002000_0/part-02000. blk_9090514259289206027
+INFO dfs.DataNode$DataXceiver: Receiving block blk_9090514259289206027 src: /10.251.42.191:60531 dest: /10.251.42.191:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_9090514259289206027 src: /10.251.42.191:35804 dest: /10.251.42.191:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_9090514259289206027 src: /10.251.199.245:40306 dest: /10.251.199.245:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.199.245:50010 is added to blk_9090514259289206027 size 67108864
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_9090514259289206027 terminating
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_9090514259289206027 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_9090514259289206027 of size 67108864 from /10.251.199.245
+INFO dfs.DataNode$PacketResponder: Received block blk_9090514259289206027 of size 67108864 from /10.251.42.191
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_9090514259289206027 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_9090514259289206027 of size 67108864 from /10.251.42.191
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.19.16:50010 is added to blk_9090514259289206027 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.42.191:50010 is added to blk_9090514259289206027 size 67108864
+INFO dfs.DataBlockScanner: Verification succeeded for blk_9090514259289206027
+INFO dfs.DataNode$DataXceiver: 10.250.19.16:50010 Served block blk_9090514259289206027 to /10.250.19.16
+INFO dfs.DataNode$DataXceiver: 10.251.42.191:50010 Served block blk_9090514259289206027 to /10.251.42.191
+WARN dfs.DataNode$DataXceiver: 10.251.42.191:50010:Got exception while serving blk_9090514259289206027 to /10.251.42.191:
+INFO dfs.DataNode$DataXceiver: 10.251.199.245:50010 Served block blk_9090514259289206027 to /10.251.199.245
+WARN dfs.DataNode$DataXceiver: 10.251.199.245:50010:Got exception while serving blk_9090514259289206027 to /10.251.105.189:
+INFO dfs.DataNode$DataXceiver: 10.250.19.16:50010 Served block blk_9090514259289206027 to /10.251.90.134
+INFO dfs.DataNode$DataXceiver: 10.250.19.16:50010 Served block blk_9090514259289206027 to /10.250.19.16
+WARN dfs.DataNode$DataXceiver: 10.251.42.191:50010:Got exception while serving blk_9090514259289206027 to /10.251.42.191:
+INFO dfs.DataNode$DataXceiver: 10.251.42.191:50010 Served block blk_9090514259289206027 to /10.251.90.134
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_9090514259289206027 is added to invalidSet of 10.250.19.16:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_9090514259289206027 is added to invalidSet of 10.251.199.245:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_9090514259289206027 is added to invalidSet of 10.251.42.191:50010
+INFO dfs.FSDataset: Deleting block blk_9090514259289206027 file /mnt/hadoop/dfs/data/current/subdir63/blk_9090514259289206027
+WARN dfs.FSDataset: Unexpected error trying to delete block blk_9090514259289206027. BlockInfo not found in volumeMap.
+INFO dfs.FSDataset: Deleting block blk_9090514259289206027 file /mnt/hadoop/dfs/data/current/subdir61/blk_9090514259289206027
+INFO dfs.FSDataset: Deleting block blk_9090514259289206027 file /mnt/hadoop/dfs/data/current/subdir53/blk_9090514259289206027","This block trace shows a normal HDFS workflow: allocation (allocateBlock), replication across DataNodes (addStoredBlock and PacketResponder logs), successful verification (DataBlockScanner), client serving (DataXceiver logs), followed by cleanup of a temporary block (delete to invalidSet and FSDataset deletion). The WARN-level exceptions are transient client-connection issues during serving, not signs of underlying data corruption or Namenode failures. The final “BlockInfo not found in volumeMap” is seen when cleaning up temporary blocks and is benign. Overall, the sequence matches expected HDFS behavior, so it is not anomalous.",False,"Multiple WARNs occurred while serving the block (exceptions to hosts), and during deletion the DataNode reported an unexpected error (‘BlockInfo not found in volumeMap’), indicating metadata inconsistency and abnormal behavior.",True,True
+blk_5535263705275369892,"INFO dfs.DataNode$DataXceiver: Receiving block blk_5535263705275369892 src: /10.250.7.230:35154 dest: /10.250.7.230:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand5/_temporary/_task_200811101024_0011_m_000228_0/part-00228. blk_5535263705275369892
+INFO dfs.DataNode$DataXceiver: Receiving block blk_5535263705275369892 src: /10.250.7.230:41634 dest: /10.250.7.230:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_5535263705275369892 src: /10.251.42.9:40264 dest: /10.251.42.9:50010
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_5535263705275369892 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_5535263705275369892 of size 67108864 from /10.251.42.9
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.71.97:50010 is added to blk_5535263705275369892 size 67108864
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_5535263705275369892 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_5535263705275369892 of size 67108864 from /10.250.7.230
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_5535263705275369892 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_5535263705275369892 of size 67108864 from /10.250.7.230
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.7.230:50010 is added to blk_5535263705275369892 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.42.9:50010 is added to blk_5535263705275369892 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_5535263705275369892 is added to invalidSet of 10.250.7.230:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_5535263705275369892 is added to invalidSet of 10.251.42.9:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_5535263705275369892 is added to invalidSet of 10.251.71.97:50010
+INFO dfs.FSDataset: Deleting block blk_5535263705275369892 file /mnt/hadoop/dfs/data/current/blk_5535263705275369892
+INFO dfs.FSDataset: Deleting block blk_5535263705275369892 file /mnt/hadoop/dfs/data/current/subdir12/blk_5535263705275369892
+INFO dfs.FSDataset: Deleting block blk_5535263705275369892 file /mnt/hadoop/dfs/data/current/subdir61/blk_5535263705275369892","This is normal HDFS behavior: a temporary block was allocated, replicated to DataNodes, then marked invalid and deleted (likely because the MapReduce task was aborted or completed and its temporary files are being cleaned up). No errors or unusual patterns are present.",False,"The log sequence shows normal block operations: receiving, replicating to DataNodes, packet responders terminating successfully, updating the name system’s blockMap, invalidating, and deleting the block without any errors or warnings. There are no signs of failures, delays, or unexpected behavior.",False,False
+blk_-1053366484333380200,"INFO dfs.DataNode$DataXceiver: Receiving block blk_-1053366484333380200 src: /10.250.14.196:39128 dest: /10.250.14.196:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-1053366484333380200 src: /10.251.214.112:46248 dest: /10.251.214.112:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-1053366484333380200 src: /10.250.14.196:54422 dest: /10.250.14.196:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand6/_temporary/_task_200811101024_0013_m_000259_0/part-00259. blk_-1053366484333380200
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-1053366484333380200 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-1053366484333380200 of size 67108864 from /10.251.214.112
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-1053366484333380200 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-1053366484333380200 of size 67108864 from /10.250.14.196
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.7.96:50010 is added to blk_-1053366484333380200 size 67108864
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-1053366484333380200 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-1053366484333380200 of size 67108864 from /10.250.14.196
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.14.196:50010 is added to blk_-1053366484333380200 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.214.112:50010 is added to blk_-1053366484333380200 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-1053366484333380200 is added to invalidSet of 10.250.14.196:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-1053366484333380200 is added to invalidSet of 10.250.7.96:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-1053366484333380200 is added to invalidSet of 10.251.214.112:50010
+INFO dfs.FSDataset: Deleting block blk_-1053366484333380200 file /mnt/hadoop/dfs/data/current/subdir54/blk_-1053366484333380200
+INFO dfs.FSDataset: Deleting block blk_-1053366484333380200 file /mnt/hadoop/dfs/data/current/subdir38/blk_-1053366484333380200
+INFO dfs.FSDataset: Deleting block blk_-1053366484333380200 file /mnt/hadoop/dfs/data/current/subdir48/blk_-1053366484333380200","This sequence shows a block being written under a MapReduce _temporary path, then immediately marked invalid and deleted. That is expected cleanup of temporary blocks after a task completes or aborts. There are no error messages or indicators of corruption, so the behavior is normal.",False,"The log shows a normal block allocation, replication to three DataNodes (replication factor of 3), successful PacketResponder terminations, followed by scheduled deletion via the invalidSet. There are no error or warning messages, no corrupt replica reports, and all operations complete as expected.",False,False
+blk_-328869876236970869,"INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand5/_temporary/_task_200811101024_0011_m_001136_0/part-01136. blk_-328869876236970869
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-328869876236970869 src: /10.251.67.211:58404 dest: /10.251.67.211:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-328869876236970869 src: /10.250.14.196:35897 dest: /10.250.14.196:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-328869876236970869 src: /10.251.67.211:37386 dest: /10.251.67.211:50010
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-328869876236970869 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-328869876236970869 of size 67108864 from /10.250.14.196
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-328869876236970869 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-328869876236970869 of size 67108864 from /10.251.67.211
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-328869876236970869 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-328869876236970869 of size 67108864 from /10.251.67.211
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.67.211:50010 is added to blk_-328869876236970869 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.9.207:50010 is added to blk_-328869876236970869 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.14.196:50010 is added to blk_-328869876236970869 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-328869876236970869 is added to invalidSet of 10.250.14.196:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-328869876236970869 is added to invalidSet of 10.250.9.207:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-328869876236970869 is added to invalidSet of 10.251.67.211:50010
+INFO dfs.FSDataset: Deleting block blk_-328869876236970869 file /mnt/hadoop/dfs/data/current/subdir41/blk_-328869876236970869
+INFO dfs.FSDataset: Deleting block blk_-328869876236970869 file /mnt/hadoop/dfs/data/current/subdir57/blk_-328869876236970869
+INFO dfs.FSDataset: Deleting block blk_-328869876236970869 file /mnt/hadoop/dfs/data/current/subdir46/blk_-328869876236970869","This log shows a normal HDFS write of a temporary block (blk_-328869876236970869) followed by its invalidation and deletion once the temporary file is cleaned up. The block is allocated, replicated to three DataNodes, added to the NameSystem, then immediately marked invalid and deleted—a standard process for temporary task output cleanup. There is no indication of errors or unexpected behavior.",False,"This is normal HDFS block lifecycle activity. We see a block being allocated, streamed to three replicas (DataXceiver and PacketResponder logs), registered in the NameNode’s blockMap, and then invalidated and deleted when the temporary file is cleaned up. There are no errors, warnings or unusual patterns in the log.",False,False
+blk_-5411218201594136831,"INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt/_temporary/_task_200811092030_0003_m_001320_0/part-01320. blk_-5411218201594136831
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-5411218201594136831 src: /10.250.6.191:37441 dest: /10.250.6.191:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-5411218201594136831 src: /10.251.110.160:48277 dest: /10.251.110.160:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-5411218201594136831 src: /10.251.110.160:44787 dest: /10.251.110.160:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.110.160:50010 is added to blk_-5411218201594136831 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.6.191:50010 is added to blk_-5411218201594136831 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.111.80:50010 is added to blk_-5411218201594136831 size 67108864
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-5411218201594136831 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-5411218201594136831 of size 67108864 from /10.250.6.191
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-5411218201594136831 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-5411218201594136831 of size 67108864 from /10.251.110.160
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-5411218201594136831 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-5411218201594136831 of size 67108864 from /10.251.110.160
+INFO dfs.DataNode$DataXceiver: 10.250.6.191:50010 Served block blk_-5411218201594136831 to /10.250.6.191
+INFO dfs.DataNode$DataXceiver: 10.251.110.160:50010 Served block blk_-5411218201594136831 to /10.251.110.160
+INFO dfs.DataNode$DataXceiver: 10.251.110.160:50010 Served block blk_-5411218201594136831 to /10.251.110.160
+INFO dfs.DataNode$DataXceiver: 10.251.110.160:50010 Served block blk_-5411218201594136831 to /10.251.110.160
+INFO dfs.DataNode$DataXceiver: 10.251.110.160:50010 Served block blk_-5411218201594136831 to /10.251.110.160
+INFO dfs.DataNode$DataXceiver: 10.251.110.160:50010 Served block blk_-5411218201594136831 to /10.251.110.160
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-5411218201594136831 is added to invalidSet of 10.250.6.191:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-5411218201594136831 is added to invalidSet of 10.251.110.160:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-5411218201594136831 is added to invalidSet of 10.251.111.80:50010
+INFO dfs.FSDataset: Deleting block blk_-5411218201594136831 file /mnt/hadoop/dfs/data/current/subdir30/blk_-5411218201594136831
+INFO dfs.FSDataset: Deleting block blk_-5411218201594136831 file /mnt/hadoop/dfs/data/current/subdir42/blk_-5411218201594136831
+INFO dfs.FSDataset: Deleting block blk_-5411218201594136831 file /mnt/hadoop/dfs/data/current/subdir11/blk_-5411218201594136831","This sequence shows normal HDFS block lifecycle for a temporary MapReduce task: allocation of a 64 MB block, replication to three DataNodes, successful receipt and serving of the block, then cleanup (adding to invalidSet and deleting the block files). No errors or unusual delays appear, so this is normal behavior.",False,"This log shows a normal HDFS block lifecycle: the block is allocated, written to three DataNodes, reported back to the NameNode, served (read) multiple times, and then cleanly invalidated and deleted (as part of temporary MR task cleanup). No errors, warnings, or unusual behavior are present.",False,False
+blk_-1412026538397890885,"INFO dfs.DataNode$DataXceiver: Receiving block blk_-1412026538397890885 src: /10.250.11.53:47833 dest: /10.250.11.53:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-1412026538397890885 src: /10.250.10.223:59471 dest: /10.250.10.223:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-1412026538397890885 src: /10.250.10.223:33674 dest: /10.250.10.223:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/sortrand2/_temporary/_task_200811101024_0003_r_000146_0/part-00146. blk_-1412026538397890885
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-1412026538397890885 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-1412026538397890885 of size 67108864 from /10.250.11.53
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-1412026538397890885 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-1412026538397890885 of size 67108864 from /10.250.10.223
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-1412026538397890885 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-1412026538397890885 of size 67108864 from /10.250.10.223
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.10.223:50010 is added to blk_-1412026538397890885 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.11.53:50010 is added to blk_-1412026538397890885 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.15.240:50010 is added to blk_-1412026538397890885 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-1412026538397890885 is added to invalidSet of 10.250.10.223:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-1412026538397890885 is added to invalidSet of 10.250.11.53:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-1412026538397890885 is added to invalidSet of 10.250.15.240:50010
+INFO dfs.FSDataset: Deleting block blk_-1412026538397890885 file /mnt/hadoop/dfs/data/current/subdir0/blk_-1412026538397890885
+INFO dfs.FSDataset: Deleting block blk_-1412026538397890885 file /mnt/hadoop/dfs/data/current/subdir59/blk_-1412026538397890885
+INFO dfs.FSDataset: Deleting block blk_-1412026538397890885 file /mnt/hadoop/dfs/data/current/subdir23/blk_-1412026538397890885","This sequence shows a normal temporary block write and cleanup. The job writes a block to three DataNodes (negative block IDs are typical for in-flight, temporary blocks under construction), then after the task completes it marks the block invalid and deletes it. No errors or unusual patterns are present.",False,"This trace shows a normal HDFS block lifecycle: allocation, data transfer via PacketResponder, successful block write (64 MB) replicated to three DataNodes, and later invalidation and deletion of temporary MapReduce output files under a _temporary path. No errors or unusual patterns are present.",False,False
+blk_-7572875301666196562,"INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_200811101024_0001_m_000678_0/part-00678. blk_-7572875301666196562
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-7572875301666196562 src: /10.250.11.194:55678 dest: /10.250.11.194:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-7572875301666196562 src: /10.250.11.194:40270 dest: /10.250.11.194:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-7572875301666196562 src: /10.251.26.177:34594 dest: /10.251.26.177:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.26.177:50010 is added to blk_-7572875301666196562 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.11.194:50010 is added to blk_-7572875301666196562 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.38.214:50010 is added to blk_-7572875301666196562 size 67108864
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-7572875301666196562 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-7572875301666196562 of size 67108864 from /10.250.11.194
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-7572875301666196562 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-7572875301666196562 of size 67108864 from /10.251.26.177
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-7572875301666196562 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-7572875301666196562 of size 67108864 from /10.250.11.194
+WARN dfs.DataNode$DataXceiver: 10.251.38.214:50010:Got exception while serving blk_-7572875301666196562 to /10.251.31.180:
+INFO dfs.DataNode$DataXceiver: 10.251.38.214:50010 Served block blk_-7572875301666196562 to /10.251.31.180
+WARN dfs.DataNode$DataXceiver: 10.251.26.177:50010:Got exception while serving blk_-7572875301666196562 to /10.251.201.204:
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-7572875301666196562 is added to invalidSet of 10.250.11.194:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-7572875301666196562 is added to invalidSet of 10.251.26.177:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-7572875301666196562 is added to invalidSet of 10.251.38.214:50010
+INFO dfs.FSDataset: Deleting block blk_-7572875301666196562 file /mnt/hadoop/dfs/data/current/subdir43/blk_-7572875301666196562
+INFO dfs.FSDataset: Deleting block blk_-7572875301666196562 file /mnt/hadoop/dfs/data/current/subdir62/blk_-7572875301666196562
+INFO dfs.FSDataset: Deleting block blk_-7572875301666196562 file /mnt/hadoop/dfs/data/current/subdir39/blk_-7572875301666196562","The block is immediately invalidated and deleted on all replicas right after being written—there are multiple WARN-level exceptions when serving the block and then NameSystem.delete calls adding it to the invalidSet on every DataNode followed by file deletion. Under normal operation, a newly written block would not be invalidated and removed, so this pattern indicates an anomaly (likely corruption or pipeline failure).",True,"This log shows the normal lifecycle of a temporary HDFS block: allocation, replication to three DataNodes, block receipt acknowledgments, occasional WARNs on read/serve (typical transient I/O or client disconnects), and eventual cleanup when the temporary job directory is deleted. There is no indication of corruption, persistent failures, or abnormal behavior beyond expected WARN entries.",False,False
+blk_-98282103365530745,"INFO dfs.DataNode$DataXceiver: Receiving block blk_-98282103365530745 src: /10.251.26.8:51235 dest: /10.251.26.8:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-98282103365530745 src: /10.251.199.159:48674 dest: /10.251.199.159:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-98282103365530745 src: /10.251.199.159:57416 dest: /10.251.199.159:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand7/_temporary/_task_200811101024_0014_m_001006_0/part-01006. blk_-98282103365530745
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-98282103365530745 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-98282103365530745 of size 3538217 from /10.251.26.8
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-98282103365530745 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-98282103365530745 of size 3538217 from /10.251.199.159
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-98282103365530745 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-98282103365530745 of size 3538217 from /10.251.199.159
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.199.159:50010 is added to blk_-98282103365530745 size 3538217
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.214.175:50010 is added to blk_-98282103365530745 size 3538217
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.26.8:50010 is added to blk_-98282103365530745 size 3538217","The log shows a standard HDFS block write: a temporary (negative-ID) block is received from three datanodes, PacketResponders terminate normally, and the Namenode records the stored block replicas. No errors, timeouts, or unusual status codes appear, so this behavior is normal.",False,"The log shows normal INFO-level operations: a data block is allocated, received by three DataNodes, and stored without any errors or warnings. The negative block ID is just an internal signed identifier and not indicative of a failure.",False,False
+blk_-4149048750744620036,"INFO dfs.DataNode$DataXceiver: Receiving block blk_-4149048750744620036 src: /10.251.201.204:39658 dest: /10.251.201.204:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-4149048750744620036 src: /10.251.201.204:37327 dest: /10.251.201.204:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/sortrand2/_temporary/_task_200811101024_0003_r_000255_0/part-00255. blk_-4149048750744620036
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-4149048750744620036 src: /10.251.126.5:46158 dest: /10.251.126.5:50010
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-4149048750744620036 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-4149048750744620036 of size 67108864 from /10.251.201.204
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-4149048750744620036 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-4149048750744620036 of size 67108864 from /10.251.201.204
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-4149048750744620036 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-4149048750744620036 of size 67108864 from /10.251.126.5
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.126.5:50010 is added to blk_-4149048750744620036 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.70.211:50010 is added to blk_-4149048750744620036 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.201.204:50010 is added to blk_-4149048750744620036 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-4149048750744620036 is added to invalidSet of 10.251.126.5:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-4149048750744620036 is added to invalidSet of 10.251.201.204:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-4149048750744620036 is added to invalidSet of 10.251.70.211:50010
+INFO dfs.FSDataset: Deleting block blk_-4149048750744620036 file /mnt/hadoop/dfs/data/current/subdir59/blk_-4149048750744620036
+INFO dfs.FSDataset: Deleting block blk_-4149048750744620036 file /mnt/hadoop/dfs/data/current/subdir28/blk_-4149048750744620036
+INFO dfs.FSDataset: Deleting block blk_-4149048750744620036 file /mnt/hadoop/dfs/data/current/subdir13/blk_-4149048750744620036","This log shows a DataNode receiving an under-construction block (negative block ID) for a MapReduce task’s temporary output directory, then the NameNode immediately invalidating and deleting it as part of the normal task cleanup of _temporary files. No errors or signs of corruption are present, so this is expected behavior rather than an anomaly.",False,"All entries are INFO-level and depict a normal sequence of HDFS operations: allocating and writing a temporary block (negative block ID), updating replicas, then marking and deleting it as part of job cleanup. No errors or warnings are present.",False,False
+blk_4450089043899143325,"INFO dfs.DataNode$DataXceiver: Receiving block blk_4450089043899143325 src: /10.251.91.84:42856 dest: /10.251.91.84:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand7/_temporary/_task_200811101024_0014_m_001340_0/part-01340. blk_4450089043899143325
+INFO dfs.DataNode$DataXceiver: Receiving block blk_4450089043899143325 src: /10.251.91.84:33106 dest: /10.251.91.84:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_4450089043899143325 src: /10.251.74.79:53189 dest: /10.251.74.79:50010
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_4450089043899143325 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_4450089043899143325 of size 67108864 from /10.251.91.84
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_4450089043899143325 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_4450089043899143325 of size 67108864 from /10.251.91.84
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_4450089043899143325 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_4450089043899143325 of size 67108864 from /10.251.74.79
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.74.79:50010 is added to blk_4450089043899143325 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.91.84:50010 is added to blk_4450089043899143325 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.107.19:50010 is added to blk_4450089043899143325 size 67108864","The log shows standard HDFS block allocation and replication workflow: a block is allocated, received by DataNodes, PacketResponders terminate normally, and the block map is updated with the expected DataNode hosts. There are no error, warning, or timeout messages, so this behavior is normal.",False,"The log shows a normal HDFS block write of blk_4450089043899143325: the block is received by DataNodes, PacketResponders terminate cleanly, the full 64 MB size is acknowledged, and three replicas (10.251.74.79, 10.251.91.84, 10.251.107.19) are successfully added to the NameNode’s block map. No warnings or errors were logged.",False,False
+blk_8778872766281273690,"INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt/_temporary/_task_200811092030_0003_m_001959_1/part-01959. blk_8778872766281273690
+INFO dfs.DataNode$DataXceiver: Receiving block blk_8778872766281273690 src: /10.251.198.196:48554 dest: /10.251.198.196:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_8778872766281273690 src: /10.251.66.102:49717 dest: /10.251.66.102:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_8778872766281273690 src: /10.251.66.102:57644 dest: /10.251.66.102:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.198.196:50010 is added to blk_8778872766281273690 size 62071387
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.123.33:50010 is added to blk_8778872766281273690 size 62071387
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.66.102:50010 is added to blk_8778872766281273690 size 62071387
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_8778872766281273690 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_8778872766281273690 of size 62071387 from /10.251.198.196
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_8778872766281273690 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_8778872766281273690 of size 62071387 from /10.251.66.102
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_8778872766281273690 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_8778872766281273690 of size 62071387 from /10.251.66.102
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_8778872766281273690 is added to invalidSet of 10.251.123.33:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_8778872766281273690 is added to invalidSet of 10.251.198.196:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_8778872766281273690 is added to invalidSet of 10.251.66.102:50010
+INFO dfs.FSDataset: Deleting block blk_8778872766281273690 file /mnt/hadoop/dfs/data/current/subdir17/blk_8778872766281273690
+INFO dfs.FSDataset: Deleting block blk_8778872766281273690 file /mnt/hadoop/dfs/data/current/subdir46/blk_8778872766281273690
+WARN dfs.FSDataset: Unexpected error trying to delete block blk_8778872766281273690. BlockInfo not found in volumeMap.
+INFO dfs.FSDataset: Deleting block blk_8778872766281273690 file /mnt/hadoop/dfs/data/current/subdir63/blk_8778872766281273690","This is the normal lifecycle of a temporary HDFS block: allocation, replication to three DataNodes, then invalidation and deletion once the task’s temporary data is cleaned up. The WARN about a missing BlockInfo during delete is benign in this context and does not indicate a broader error.",False,"The WARN message ‘Unexpected error trying to delete block blk_8778872766281273690. BlockInfo not found in volumeMap’ indicates a failure during block deletion, which is anomalous.",True,True
+blk_-8345452294157410571,"INFO dfs.DataNode$DataXceiver: Receiving block blk_-8345452294157410571 src: /10.251.26.8:52598 dest: /10.251.26.8:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/sortrand2/_temporary/_task_200811101024_0003_r_000202_0/part-00202. blk_-8345452294157410571
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-8345452294157410571 src: /10.251.111.228:45147 dest: /10.251.111.228:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-8345452294157410571 src: /10.251.26.8:36861 dest: /10.251.26.8:50010
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-8345452294157410571 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-8345452294157410571 of size 67108864 from /10.251.111.228
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-8345452294157410571 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-8345452294157410571 of size 67108864 from /10.251.26.8
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-8345452294157410571 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-8345452294157410571 of size 67108864 from /10.251.26.8
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.90.134:50010 is added to blk_-8345452294157410571 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.111.228:50010 is added to blk_-8345452294157410571 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.26.8:50010 is added to blk_-8345452294157410571 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-8345452294157410571 is added to invalidSet of 10.251.111.228:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-8345452294157410571 is added to invalidSet of 10.251.26.8:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-8345452294157410571 is added to invalidSet of 10.251.90.134:50010
+INFO dfs.FSDataset: Deleting block blk_-8345452294157410571 file /mnt/hadoop/dfs/data/current/subdir19/blk_-8345452294157410571
+INFO dfs.FSDataset: Deleting block blk_-8345452294157410571 file /mnt/hadoop/dfs/data/current/subdir62/blk_-8345452294157410571
+INFO dfs.FSDataset: Deleting block blk_-8345452294157410571 file /mnt/hadoop/dfs/data/current/subdir18/blk_-8345452294157410571","All messages are INFO-level, and the sequence corresponds to writes of a temporary output block followed by normal cleanup (adding to invalidSet and deleting temporary block files). This is expected behavior when a MapReduce task writes to a _temporary directory and its temp blocks are later invalidated and removed.",False,"The log shows a normal block write cycle: allocation by NameSystem, replication to DataNodes, blockMap updates, and then the block being marked invalid and deleted (as part of temporary task cleanup). All messages are INFO level with expected size values; there are no errors or warnings.",False,False
+blk_3587087202704969822,"INFO dfs.DataNode$DataXceiver: Receiving block blk_3587087202704969822 src: /10.251.74.192:34810 dest: /10.251.74.192:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand4/_temporary/_task_200811101024_0009_m_001684_1/part-01684. blk_3587087202704969822
+INFO dfs.DataNode$DataXceiver: Receiving block blk_3587087202704969822 src: /10.251.110.160:47773 dest: /10.251.110.160:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_3587087202704969822 src: /10.251.74.192:48023 dest: /10.251.74.192:50010
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_3587087202704969822 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_3587087202704969822 of size 67108864 from /10.251.110.160
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_3587087202704969822 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_3587087202704969822 of size 67108864 from /10.251.74.192
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_3587087202704969822 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_3587087202704969822 of size 67108864 from /10.251.74.192
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.74.192:50010 is added to blk_3587087202704969822 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.30.179:50010 is added to blk_3587087202704969822 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.110.160:50010 is added to blk_3587087202704969822 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_3587087202704969822 is added to invalidSet of 10.251.110.160:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_3587087202704969822 is added to invalidSet of 10.251.30.179:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_3587087202704969822 is added to invalidSet of 10.251.74.192:50010
+INFO dfs.FSDataset: Deleting block blk_3587087202704969822 file /mnt/hadoop/dfs/data/current/subdir57/blk_3587087202704969822
+INFO dfs.FSDataset: Deleting block blk_3587087202704969822 file /mnt/hadoop/dfs/data/current/subdir58/blk_3587087202704969822
+INFO dfs.FSDataset: Deleting block blk_3587087202704969822 file /mnt/hadoop/dfs/data/current/subdir34/blk_3587087202704969822","This sequence shows a normal lifecycle for a temporary HDFS block: allocation, receipt on three DataNodes (with PacketResponder terminations), blockMap updates, then cleanup via invalidation and file deletion under the temporary task directory. There are no error or warning indications, so this is normal behavior.",False,"All log entries show the normal lifecycle of an HDFS block (receipt, replication to three nodes, metadata update, and eventual deletion). There are no ERROR or WARN messages, and the block’s size and replication events follow expected patterns, so this block is not anomalous.",False,False
+blk_-5026958222819248143,"INFO dfs.DataNode$DataXceiver: Receiving block blk_-5026958222819248143 src: /10.250.10.100:39230 dest: /10.250.10.100:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-5026958222819248143 src: /10.251.195.52:44365 dest: /10.251.195.52:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-5026958222819248143 src: /10.250.10.100:43342 dest: /10.250.10.100:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_200811092030_0001_m_000990_0/part-00990. blk_-5026958222819248143
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-5026958222819248143 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-5026958222819248143 of size 67108864 from /10.250.10.100
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-5026958222819248143 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-5026958222819248143 of size 67108864 from /10.251.195.52
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-5026958222819248143 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-5026958222819248143 of size 67108864 from /10.250.10.100
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.195.52:50010 is added to blk_-5026958222819248143 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.10.100:50010 is added to blk_-5026958222819248143 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.214.32:50010 is added to blk_-5026958222819248143 size 67108864
+WARN dfs.DataNode$DataXceiver: 10.251.195.52:50010:Got exception while serving blk_-5026958222819248143 to /10.251.74.79:
+INFO dfs.DataNode$DataXceiver: 10.251.195.52:50010 Served block blk_-5026958222819248143 to /10.251.74.79
+WARN dfs.DataNode$DataXceiver: 10.250.10.100:50010:Got exception while serving blk_-5026958222819248143 to /10.250.10.100:
+INFO dfs.DataBlockScanner: Verification succeeded for blk_-5026958222819248143
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-5026958222819248143 is added to invalidSet of 10.250.10.100:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-5026958222819248143 is added to invalidSet of 10.251.195.52:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-5026958222819248143 is added to invalidSet of 10.251.214.32:50010
+INFO dfs.FSDataset: Deleting block blk_-5026958222819248143 file /mnt/hadoop/dfs/data/current/subdir41/blk_-5026958222819248143
+INFO dfs.FSDataset: Deleting block blk_-5026958222819248143 file /mnt/hadoop/dfs/data/current/subdir7/blk_-5026958222819248143
+INFO dfs.FSDataset: Deleting block blk_-5026958222819248143 file /mnt/hadoop/dfs/data/current/subdir32/blk_-5026958222819248143","This sequence shows a normal, short-lived temporary block (note the negative blk ID and the _temporary path). The block is written to three replicas, verified successfully, then marked invalid and deleted as part of cleanup. The WARN messages during pipeline shutdown are expected when clients close sockets, not an error condition.",False,"This log shows the standard lifecycle of an HDFS block: allocation, pipeline replication to three DataNodes, successful PacketResponder acknowledgments, checksum verification, and eventual block invalidation and deletion (for a temporary MapReduce output). The WARN entries are recoverable client‐serve exceptions and don’t indicate a block corruption or system fault.",False,False
+blk_6605709525137617500,"INFO dfs.DataNode$DataXceiver: Receiving block blk_6605709525137617500 src: /10.250.17.225:42402 dest: /10.250.17.225:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt4/_temporary/_task_200811101024_0010_m_001847_0/part-01847. blk_6605709525137617500","These INFO‐level entries show a normal HDFS block allocation and reception for a temporary map task output. There are no errors, warnings, or unusual patterns, so the block is normal.",False,"The log lines show normal INFO-level messages for DataNode receiving a block and FSNamesystem allocating a block without any errors, warnings, or unusual patterns.",False,True
+blk_4026819367964267213,"INFO dfs.DataNode$DataXceiver: Receiving block blk_4026819367964267213 src: /10.251.126.22:44496 dest: /10.251.126.22:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_4026819367964267213 src: /10.251.126.22:43275 dest: /10.251.126.22:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_4026819367964267213 src: /10.250.14.38:36497 dest: /10.250.14.38:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt9/_temporary/_task_200811101024_0016_m_001749_0/part-01749. blk_4026819367964267213
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_4026819367964267213 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_4026819367964267213 of size 67108864 from /10.251.126.22
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_4026819367964267213 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_4026819367964267213 of size 67108864 from /10.251.126.22
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_4026819367964267213 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_4026819367964267213 of size 67108864 from /10.250.14.38
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.10.176:50010 is added to blk_4026819367964267213 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.126.22:50010 is added to blk_4026819367964267213 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.14.38:50010 is added to blk_4026819367964267213 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_4026819367964267213 is added to invalidSet of 10.250.10.176:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_4026819367964267213 is added to invalidSet of 10.250.14.38:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_4026819367964267213 is added to invalidSet of 10.251.126.22:50010
+INFO dfs.FSDataset: Deleting block blk_4026819367964267213 file /mnt/hadoop/dfs/data/current/subdir56/blk_4026819367964267213
+INFO dfs.FSDataset: Deleting block blk_4026819367964267213 file /mnt/hadoop/dfs/data/current/subdir56/blk_4026819367964267213
+INFO dfs.FSDataset: Deleting block blk_4026819367964267213 file /mnt/hadoop/dfs/data/current/subdir9/blk_4026819367964267213","This log shows a block being allocated under a _temporary task directory, received by three DataNodes, then immediately marked invalid and deleted. This is expected cleanup of temporary MapReduce output once the job completes. No errors or unusual patterns are present.",False,"All log entries show normal DataNode block receipt, replication acknowledgments, blockMap updates, and eventual deletion of a temporary job block. There are no error, warning, or unexpected patterns — the lifecycle is consistent with HDFS’s normal temporary file handling.",False,False
+blk_5198887017135705732,"INFO dfs.DataNode$DataXceiver: Receiving block blk_5198887017135705732 src: /10.250.6.223:52719 dest: /10.250.6.223:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_5198887017135705732 src: /10.250.6.223:55875 dest: /10.250.6.223:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_5198887017135705732 src: /10.251.214.225:58248 dest: /10.251.214.225:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt2/_temporary/_task_200811101024_0002_m_002001_1/part-02001. blk_5198887017135705732
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_5198887017135705732 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_5198887017135705732 of size 67108864 from /10.250.6.223
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_5198887017135705732 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_5198887017135705732 of size 67108864 from /10.250.6.223
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_5198887017135705732 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_5198887017135705732 of size 67108864 from /10.251.214.225
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.6.223:50010 is added to blk_5198887017135705732 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.10.6:50010 is added to blk_5198887017135705732 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.214.225:50010 is added to blk_5198887017135705732 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_5198887017135705732 is added to invalidSet of 10.250.10.6:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_5198887017135705732 is added to invalidSet of 10.250.6.223:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_5198887017135705732 is added to invalidSet of 10.251.214.225:50010
+INFO dfs.FSDataset: Deleting block blk_5198887017135705732 file /mnt/hadoop/dfs/data/current/subdir46/blk_5198887017135705732
+INFO dfs.FSDataset: Deleting block blk_5198887017135705732 file /mnt/hadoop/dfs/data/current/subdir54/blk_5198887017135705732
+INFO dfs.FSDataset: Deleting block blk_5198887017135705732 file /mnt/hadoop/dfs/data/current/subdir41/blk_5198887017135705732","This sequence shows a normal block write for a temporary MapReduce output (_temporary directory): the block is received by three DataNodes, added to the NameSystem, then marked invalid and deleted as part of the expected cleanup of temporary job files. No errors or unusual behavior are present.",False,"This log shows the normal HDFS block‐lifecycle for a temporary MapReduce output: the NameNode allocates a block, the client writes it through the 3‐node pipeline (10.250.6.223 → 10.250.10.6 → 10.251.214.225), each DataNode confirms receipt (67108864 bytes), the NameSystem records the new replicas, then the temporary file is deleted (_temporary path) and its blocks are invalidated and removed from each DataNode’s local store. No errors or unusual patterns are observed.",False,False
+blk_-2685269722625066394,"INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/randtxt/_temporary/_task_200811092030_0003_m_000400_0/part-00400. blk_-2685269722625066394
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-2685269722625066394 src: /10.251.106.10:41698 dest: /10.251.106.10:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-2685269722625066394 src: /10.251.106.10:35299 dest: /10.251.106.10:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-2685269722625066394 src: /10.251.26.131:42318 dest: /10.251.26.131:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.7.96:50010 is added to blk_-2685269722625066394 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.26.131:50010 is added to blk_-2685269722625066394 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.106.10:50010 is added to blk_-2685269722625066394 size 67108864
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-2685269722625066394 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-2685269722625066394 of size 67108864 from /10.251.106.10
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-2685269722625066394 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-2685269722625066394 of size 67108864 from /10.251.106.10
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-2685269722625066394 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-2685269722625066394 of size 67108864 from /10.251.26.131
+INFO dfs.DataNode$DataXceiver: 10.250.7.96:50010 Served block blk_-2685269722625066394 to /10.250.7.96
+INFO dfs.DataNode$DataXceiver: 10.251.26.131:50010 Served block blk_-2685269722625066394 to /10.251.202.181
+WARN dfs.DataNode$DataXceiver: 10.250.7.96:50010:Got exception while serving blk_-2685269722625066394 to /10.251.43.192:
+INFO dfs.DataNode$DataXceiver: 10.251.26.131:50010 Served block blk_-2685269722625066394 to /10.251.202.181
+INFO dfs.DataNode$DataXceiver: 10.250.7.96:50010 Served block blk_-2685269722625066394 to /10.250.7.96
+WARN dfs.DataNode$DataXceiver: 10.250.7.96:50010:Got exception while serving blk_-2685269722625066394 to /10.251.111.130:
+INFO dfs.DataNode$DataXceiver: 10.251.26.131:50010 Served block blk_-2685269722625066394 to /10.251.26.131
+WARN dfs.DataNode$DataXceiver: 10.250.7.96:50010:Got exception while serving blk_-2685269722625066394 to /10.251.43.192:
+INFO dfs.DataNode$DataXceiver: 10.250.7.96:50010 Served block blk_-2685269722625066394 to /10.251.26.8
+INFO dfs.DataNode$DataXceiver: 10.250.7.96:50010 Served block blk_-2685269722625066394 to /10.250.7.96
+INFO dfs.DataNode$DataXceiver: 10.251.106.10:50010 Served block blk_-2685269722625066394 to /10.251.202.181
+WARN dfs.DataNode$DataXceiver: 10.251.106.10:50010:Got exception while serving blk_-2685269722625066394 to /10.251.43.192:
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-2685269722625066394 is added to invalidSet of 10.250.7.96:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-2685269722625066394 is added to invalidSet of 10.251.106.10:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-2685269722625066394 is added to invalidSet of 10.251.26.131:50010
+INFO dfs.FSDataset: Deleting block blk_-2685269722625066394 file /mnt/hadoop/dfs/data/current/subdir63/blk_-2685269722625066394
+INFO dfs.FSDataset: Deleting block blk_-2685269722625066394 file /mnt/hadoop/dfs/data/current/subdir35/blk_-2685269722625066394
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: addStoredBlock request received for blk_-2685269722625066394 on 10.251.106.10:50010 size 67108864 But it does not belong to any file.
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.106.10:50010 is added to blk_-2685269722625066394 size 67108864
+INFO dfs.FSDataset: Deleting block blk_-2685269722625066394 file /mnt/hadoop/dfs/data/current/subdir7/blk_-2685269722625066394","Although occasional WARNs when serving blocks can occur, this sequence shows the block being invalidated on all replicas and deleted from disk, followed by an unexpected addStoredBlock call for a block that “does not belong to any file.” That indicates metadata inconsistency and orphaned block handling, which is not normal HDFS behavior.",True,"Multiple WARN entries show repeated exceptions while serving the same block to clients (10.251.43.192 and 10.251.111.130), indicating network or disk failures. Shortly afterward, the block is invalidated and deleted on all DataNodes, but then an addStoredBlock request appears for a block that no longer belongs to any file. This inconsistent lifecycle (deletion followed by re-addition of an unknown block) is not typical and points to a metadata or replication error.",True,True
+blk_6925039832574033981,"INFO dfs.DataNode$DataXceiver: Receiving block blk_6925039832574033981 src: /10.251.110.196:59293 dest: /10.251.110.196:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_6925039832574033981 src: /10.251.110.196:45081 dest: /10.251.110.196:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_6925039832574033981 src: /10.251.127.47:49924 dest: /10.251.127.47:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand5/_temporary/_task_200811101024_0011_m_001084_0/part-01084. blk_6925039832574033981
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_6925039832574033981 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_6925039832574033981 of size 67108864 from /10.251.110.196
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_6925039832574033981 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_6925039832574033981 of size 67108864 from /10.251.110.196
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_6925039832574033981 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_6925039832574033981 of size 67108864 from /10.251.127.47
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.39.144:50010 is added to blk_6925039832574033981 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.127.47:50010 is added to blk_6925039832574033981 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.110.196:50010 is added to blk_6925039832574033981 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_6925039832574033981 is added to invalidSet of 10.251.110.196:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_6925039832574033981 is added to invalidSet of 10.251.127.47:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_6925039832574033981 is added to invalidSet of 10.251.39.144:50010
+INFO dfs.FSDataset: Deleting block blk_6925039832574033981 file /mnt/hadoop/dfs/data/current/subdir57/blk_6925039832574033981
+INFO dfs.FSDataset: Deleting block blk_6925039832574033981 file /mnt/hadoop/dfs/data/current/subdir48/blk_6925039832574033981
+INFO dfs.FSDataset: Deleting block blk_6925039832574033981 file /mnt/hadoop/dfs/data/current/subdir12/blk_6925039832574033981",This log shows a normal lifecycle for a temporary HDFS block: allocation and replication of a task-specific (_temporary) block followed by its invalidation and deletion once the job finishes. No errors or unexpected behavior are present.,False,"The log shows normal lifecycle for a 64 MB HDFS block: allocation, replication, acknowledgement and eventual cleanup of a temporary file. There are no error or warning messages, unusual latencies or replication failures.",False,False
+blk_-2529696341347423929,"INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_200811101024_0001_m_000436_0/part-00436. blk_-2529696341347423929
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-2529696341347423929 src: /10.251.71.68:51886 dest: /10.251.71.68:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-2529696341347423929 src: /10.251.71.68:32888 dest: /10.251.71.68:50010
+INFO dfs.DataNode$DataXceiver: Receiving block blk_-2529696341347423929 src: /10.250.19.227:33904 dest: /10.250.19.227:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.19.227:50010 is added to blk_-2529696341347423929 size 67108864
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.6.191:50010 is added to blk_-2529696341347423929 size 67108864
+INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_-2529696341347423929 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-2529696341347423929 of size 67108864 from /10.251.71.68
+INFO dfs.DataNode$PacketResponder: PacketResponder 0 for block blk_-2529696341347423929 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-2529696341347423929 of size 67108864 from /10.250.19.227
+INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.71.68:50010 is added to blk_-2529696341347423929 size 67108864
+INFO dfs.DataNode$PacketResponder: PacketResponder 2 for block blk_-2529696341347423929 terminating
+INFO dfs.DataNode$PacketResponder: Received block blk_-2529696341347423929 of size 67108864 from /10.251.71.68
+WARN dfs.DataNode$DataXceiver: 10.250.19.227:50010:Got exception while serving blk_-2529696341347423929 to /10.250.14.38:
+WARN dfs.DataNode$DataXceiver: 10.250.6.191:50010:Got exception while serving blk_-2529696341347423929 to /10.250.14.38:
+INFO dfs.DataNode$DataXceiver: 10.250.6.191:50010 Served block blk_-2529696341347423929 to /10.250.14.38
+INFO dfs.DataBlockScanner: Verification succeeded for blk_-2529696341347423929
+INFO dfs.DataBlockScanner: Verification succeeded for blk_-2529696341347423929
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-2529696341347423929 is added to invalidSet of 10.250.19.227:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-2529696341347423929 is added to invalidSet of 10.250.6.191:50010
+INFO dfs.FSNamesystem: BLOCK* NameSystem.delete: blk_-2529696341347423929 is added to invalidSet of 10.251.71.68:50010
+INFO dfs.FSDataset: Deleting block blk_-2529696341347423929 file /mnt/hadoop/dfs/data/current/subdir2/blk_-2529696341347423929
+INFO dfs.FSDataset: Deleting block blk_-2529696341347423929 file /mnt/hadoop/dfs/data/current/subdir41/blk_-2529696341347423929
+INFO dfs.FSDataset: Deleting block blk_-2529696341347423929 file /mnt/hadoop/dfs/data/current/subdir46/blk_-2529696341347423929","The log shows a normal HDFS block lifecycle: allocation, replication across data nodes, transient WARNs during serving (likely network hiccups), successful receptions, block verification, and eventual cleanup (invalidSet addition and deletion). There are no persistent errors or unusual failures indicating an anomaly.",False,"This log shows a normal HDFS block lifecycle: allocation, replication, writes acknowledged, verification succeeded, and eventual invalidation and deletion of a temporary block (_temporary directory indicates job output cleanup). The WARN messages are transient transfer exceptions that recovered successfully and did not indicate data corruption.",False,False
